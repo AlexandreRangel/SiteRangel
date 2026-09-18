@@ -1,0 +1,123 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Alexandre Rangel</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/content-cards.css" />
+<script src='/google_analytics_auto.js'></script></head>
+
+<body class="no-sidebar is-preload">
+	<div id="page-wrapper">
+	<canvas id="rangel_background"></canvas>
+	<div id="include-header"></div>
+<!-- Tags -->
+<!-- <i>&nbsp;
+  &nbsp;&nbsp;<a href="content.html?tag=interactivity">#interactivity</a>
+  &nbsp;&nbsp;<a href="content.html?tag=music">#music</a>
+  &nbsp;&nbsp;<a href="content.html?tag=vj">#vj</a>
+  &nbsp;&nbsp;<a href="content.html?tag=development">#development</a>
+  &nbsp;&nbsp;<a href="content.html?tag=p5">#p5</a>
+  &nbsp;&nbsp;<a href="content.html?tag=ableton">#ableton</a>
+</i> -->
+<div class="wrapper">
+<div class="container" id="main">
+
+<!-- Content -->
+
+<h2 lang="pt-BR">Hydra</h2>
+<h2 lang="en">Hydra</h2>
+
+<i>Live Coding Software</i>
+
+<br><br>
+
+<!-- ///////////////////////////////////////////////////////////////// -->
+ 
+<!-- <span lang="pt-BR">
+  <b>O que é o Hydra</b><br>
+
+</span>
+
+<span lang="en">
+  <b>What's Hydra</b><br>
+
+</span>
+
+<br><br> -->
+
+<!-- ///////////////////////////////////////////////////////////////// -->
+
+
+<!-- ///////////////////////////////////////////////////////////////// -->
+<h3>Hydra Editor</h3>
+<a href="https://hydra.ojack.xyz">https://hydra.ojack.xyz</a>
+<br><br>
+<!-- ///////////////////////////////////////////////////////////////// -->
+
+
+<!-- ///////////////////////////////////////////////////////////////// -->
+<h3>Meus exemplos no Hydra</h3>
+<a href="https://hydra.ojack.xyz/?sketch_id=alexandre_0">https://hydra.ojack.xyz/?sketch_id=alexandre_0</a><br>
+<a href="https://hydra.ojack.xyz/?sketch_id=alexandre_0">https://hydra.ojack.xyz/?sketch_id=alexandre_1</a><br>
+<a href="https://hydra.ojack.xyz/?sketch_id=alexandre_0">https://hydra.ojack.xyz/?sketch_id=alexandre_2</a><br>
+<br>
+<!-- ///////////////////////////////////////////////////////////////// -->
+
+
+<!-- ///////////////////////////////////////////////////////////////// -->
+<h3 lang="pt-BR">Documentação do Hydra</h3>
+<h3 lang="en">Hydra Documentation</h3>
+<a href="https://hydra.ojack.xyz/docs/docs/quick-start">hydra.ojack.xyz/docs/docs/quick-start</a>
+<br><br>
+<!-- ///////////////////////////////////////////////////////////////// -->
+
+<br>
+
+<!-- Dynamic Content Section -->
+<div id="dynamic-content">
+  <!-- <h3 lang="pt-BR">Mais trabalhos com Cables.gl</h3>
+  <h3 lang="en">More Cables.gl works</h3> -->
+  <section id="cards"></section>
+</div>
+
+
+</div> <!-- close container -->
+</div> <!-- close wrapper -->
+
+<div id="include-footer"></div>
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="https://unpkg.com/hydra-synth"></script> 
+<script src="/background-hydra.js" defer></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main2.js"></script>
+<script src="assets/js/content-loader.js"></script>
+<script>
+  $("#include-header").load("header.html");
+  $("#include-footer").load("footer.html");
+
+  // Load GenerativeAI content when page loads
+  $(document).ready(function() {
+    loadContentByTag('Hydra', 'cards', {
+      excludeCurrentPage: true
+    });
+  });
+</script>
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1979679-2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'UA-1979679-2');
+</script>
+
+</body>
+</html>

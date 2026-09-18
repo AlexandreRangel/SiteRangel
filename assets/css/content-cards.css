@@ -1,0 +1,584 @@
+/* Scoped Content Cards Styles for Dynamic Content Loader */
+
+#dynamic-content :root,
+section#cards :root,
+#objkt-featured :root {
+  --cardWidth: 100%;
+  --cardHeight: content;
+  --cardMargin: 32px 0 0 0;
+}
+
+#dynamic-content .cards,
+section#cards .cards,
+#objkt-featured .cards {
+  display: flex !important;
+  flex-wrap: wrap !important;
+}
+
+#dynamic-content .card,
+section#cards .card,
+#objkt-featured .cards .card {
+  width: var(--cardWidth);
+  height: var(--cardHeight);
+  margin: var(--cardMargin);
+  margin-bottom: 1.5em !important;
+  border-radius: 10px;
+  background: rgba(200, 200, 200, 0.25);
+  box-sizing: border-box;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center;
+  font-size: 16pt;
+}
+
+#dynamic-content .card:last-child,
+section#cards .card:last-child,
+#objkt-featured .cards .card:last-child {
+  margin-bottom: 12px;
+}
+
+#dynamic-content .card__col-1,
+section#cards .card__col-1,
+#objkt-featured .cards .card__col-1 {
+  flex: 2 0 0% !important;
+}
+
+#dynamic-content .card__col-2,
+section#cards .card__col-2,
+#objkt-featured .cards .card__col-2 {
+  padding: 16px;
+  flex: 3 0 0% !important;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#dynamic-content .link-image,
+section#cards .link-image,
+#objkt-featured .cards .link-image {
+  text-decoration: none;
+  border-radius: 10px;
+}
+
+#dynamic-content .image-hq,
+section#cards .image-hq,
+#objkt-featured .cards .image-hq {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+}
+
+#dynamic-content .image-hq .image,
+section#cards .image-hq .image,
+#objkt-featured .cards .image-hq .image {
+  display: block;
+  width: 100%;
+  margin: -10% 0;
+}
+
+#dynamic-content .image,
+section#cards .image,
+#objkt-featured .cards .image {
+  display: block;
+  position: relative;
+  width: 100%;
+  height: auto;
+  border-radius: 9px;
+  text-decoration: none;
+}
+
+#dynamic-content .title,
+section#cards .title,
+#objkt-featured .cards .title {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 6px;
+}
+
+#dynamic-content .text,
+section#cards .text,
+#objkt-featured .cards .text {
+  font-size: 18px;
+  padding-top: 12px;
+  padding-bottom: 6px;
+  line-height: 130%;
+}
+
+#dynamic-content .tags,
+section#cards .tags,
+#objkt-featured .cards .tags {
+  font-size: 18px;
+  font-style: italic;
+}
+
+#dynamic-content .icon,
+section#cards .icon,
+#objkt-featured .cards .icon {
+  margin-right: 18px;
+  color: #ffffffa0;
+  display: block;
+  font-size: 3.333em;
+  position: absolute;
+  right: 0;
+}
+
+#dynamic-content .overlay,
+section#cards .overlay,
+#objkt-featured .cards .overlay {
+  position: relative;
+  top: -67px;
+}
+
+@media (max-width: 1024px) {
+  #dynamic-content .card__col-1,
+  section#cards .card__col-1,
+  #objkt-featured .cards .card__col-1 {
+    flex: 1 0 0% !important;
+  }
+
+  #dynamic-content .card__col-2,
+  section#cards .card__col-2,
+  #objkt-featured .cards .card__col-2 {
+    flex: 1 0 0% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  #dynamic-content .card,
+  section#cards .card,
+  #objkt-featured .cards .card {
+    flex-direction: column !important;
+  }
+
+  #dynamic-content .image,
+  section#cards .image,
+  #objkt-featured .cards .image {
+    border-radius: 9px 9px 0px 0px;
+  }
+}
+
+/* NFT sections: column count follows content width */
+#editart-projects,
+#fxhash-projects,
+#objkt-featured {
+  /* Card size: 1 = default. 1.1 ≈ 10% larger (image + text). Column breakpoints unchanged. */
+  --nft-card-size: 1.1;
+  --nft-card-gap: 1.25rem;
+  --nft-card-body-min-height: calc(5.5rem * var(--nft-card-size));
+  --nft-card-title-size: calc(1.05rem * var(--nft-card-size));
+  --nft-card-text-size: calc(0.82rem * var(--nft-card-size));
+  --nft-card-meta-size: calc(0.78rem * var(--nft-card-size));
+  --nft-card-col-padding: calc(14px * var(--nft-card-size));
+  container-type: inline-size;
+  container-name: nft-cards;
+  width: 100%;
+  max-width: 100%;
+}
+
+#editart-projects #editart-cards,
+#fxhash-projects #fxhash-cards,
+#objkt-featured #objkt-cards {
+  width: 100%;
+  max-width: 100%;
+}
+
+/* EditArt project cards (NFT.html) */
+#editart-projects .editart-cards__status {
+  font-size: 1.1em;
+  opacity: 0.85;
+}
+
+#editart-projects .editart-cards__status--error {
+  color: #c44;
+}
+
+#editart-projects .editart-profile-link {
+  display: inline-block;
+  margin-top: 0.75em;
+}
+
+#editart-projects .editart-grid {
+  margin-top: 0.5rem;
+}
+
+#editart-projects .editart-grid .editart-card {
+  flex-direction: column !important;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0 !important;
+  font-size: 12pt;
+  box-sizing: border-box;
+  display: flex !important;
+}
+
+#editart-projects .editart-grid .editart-card .card__col-1,
+#editart-projects .editart-grid .editart-card .card__col-2 {
+  flex: none !important;
+  width: 100%;
+}
+
+#editart-projects .editart-grid .editart-card .card__col-2 {
+  padding: var(--nft-card-col-padding);
+  padding-bottom: calc(var(--nft-card-col-padding) * 1.15);
+  flex-grow: 1;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#editart-projects .editart-grid .link-image {
+  display: block;
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #0d0d0f;
+}
+
+#editart-projects .editart-grid .editart-card__image {
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+#editart-projects .editart-grid .title {
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+#editart-projects .editart-grid .text {
+  font-style: normal;
+}
+
+#editart-projects .editart-grid .tags {
+  font-style: italic;
+}
+
+/* fx(hash) project cards (NFT.html) */
+#fxhash-projects .fxhash-cards__status {
+  font-size: 1.1em;
+  opacity: 0.85;
+}
+
+#fxhash-projects .fxhash-cards__status--error {
+  color: #c44;
+}
+
+#fxhash-projects .fxhash-profile-link {
+  display: inline-block;
+  margin-top: 0.75em;
+}
+
+#fxhash-projects .fxhash-grid {
+  margin-top: 0.5rem;
+}
+
+#fxhash-projects .fxhash-grid .fxhash-card {
+  flex-direction: column !important;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0 !important;
+  font-size: 12pt;
+  box-sizing: border-box;
+  display: flex !important;
+}
+
+#fxhash-projects .fxhash-grid .fxhash-card .card__col-1,
+#fxhash-projects .fxhash-grid .fxhash-card .card__col-2 {
+  flex: none !important;
+  width: 100%;
+}
+
+#fxhash-projects .fxhash-grid .fxhash-card .card__col-2 {
+  padding: var(--nft-card-col-padding);
+  padding-bottom: calc(var(--nft-card-col-padding) * 1.15);
+  flex-grow: 1;
+  display: flex !important;
+  flex-direction: column !important;
+}
+
+#fxhash-projects .fxhash-grid .link-image {
+  display: block;
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #0d0d0f;
+}
+
+#fxhash-projects .fxhash-grid .fxhash-card__image {
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 1;
+}
+
+#fxhash-projects .fxhash-grid .title {
+  font-weight: bold;
+  padding-bottom: 4px;
+}
+
+#fxhash-projects .fxhash-grid .tags {
+  font-style: italic;
+}
+
+/* objkt featured cards (NFT.html) */
+#objkt-featured .objkt-cards__status {
+  font-size: 1.1em;
+  opacity: 0.85;
+}
+
+#objkt-featured .objkt-cards__status--error {
+  color: #c44;
+}
+
+#objkt-featured .objkt-card__desc {
+  margin: 0;
+}
+
+#objkt-featured .objkt-card__meta {
+  margin-top: 0.5em;
+}
+
+#objkt-featured .objkt-profile-link {
+  display: inline-block;
+  margin-top: 0.75em;
+}
+
+/* objkt NFT grid */
+#objkt-featured .objkt-grid {
+  margin-top: 0.5rem;
+}
+
+#objkt-featured .objkt-grid .objkt-card {
+  flex-direction: column !important;
+  display: flex !important;
+  width: 100%;
+  min-width: 0;
+  max-width: 100%;
+  margin: 0 !important;
+  font-size: 12pt;
+  box-sizing: border-box;
+}
+
+#objkt-featured .objkt-grid .objkt-card .card__col-1,
+#objkt-featured .objkt-grid .objkt-card .card__col-2 {
+  flex: none !important;
+  width: 100%;
+}
+
+#objkt-featured .objkt-grid .link-image {
+  display: block;
+  position: relative;
+  aspect-ratio: 1;
+  overflow: hidden;
+  background: #0d0d0f;
+}
+
+#objkt-featured .objkt-grid .objkt-card__image {
+  display: block !important;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  opacity: 1;
+}
+
+#objkt-featured .objkt-grid .objkt-card__placeholder {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(80, 80, 90, 0.35),
+    rgba(40, 40, 50, 0.5)
+  );
+}
+
+/* NFT card surface (objkt-like) */
+#editart-projects .editart-grid .editart-card,
+#fxhash-projects .fxhash-grid .fxhash-card,
+#objkt-featured .objkt-grid .objkt-card {
+  height: 100%;
+  min-height: 0;
+  background: rgba(24, 24, 28, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+#editart-projects .editart-grid .editart-card:hover,
+#fxhash-projects .fxhash-grid .fxhash-card:hover,
+#objkt-featured .objkt-grid .objkt-card:hover {
+  border-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+}
+
+#editart-projects .editart-grid .editart-card .card__col-2,
+#fxhash-projects .fxhash-grid .fxhash-card .card__col-2,
+#objkt-featured .objkt-grid .objkt-card .card__col-2 {
+  padding: var(--nft-card-col-padding);
+  padding-bottom: calc(var(--nft-card-col-padding) * 1.05);
+  flex: 1 1 auto;
+  min-height: var(--nft-card-body-min-height);
+  overflow: hidden;
+}
+
+/* NFT grids: full width, 2–6 columns (4 cols ≈ objkt on ~1200px content) */
+#editart-projects .editart-grid,
+#fxhash-projects .fxhash-grid,
+#objkt-featured .objkt-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: calc(var(--nft-card-gap) / var(--nft-card-size));
+  width: 100%;
+  max-width: 100%;
+  align-items: stretch;
+  zoom: var(--nft-card-size);
+}
+
+/* Firefox: no zoom — scale layout width so cards grow without changing column breakpoints */
+@supports not (zoom: 1) {
+  #editart-projects .editart-grid,
+  #fxhash-projects .fxhash-grid,
+  #objkt-featured .objkt-grid {
+    zoom: unset;
+    transform: scale(var(--nft-card-size));
+    transform-origin: top center;
+    width: calc(100% / var(--nft-card-size));
+    margin-inline: auto;
+  }
+
+  #editart-projects #editart-cards,
+  #fxhash-projects #fxhash-cards,
+  #objkt-featured #objkt-cards {
+    padding-bottom: calc((var(--nft-card-size) - 1) * 50%);
+  }
+}
+
+#editart-projects .editart-grid .editart-card .card__col-1,
+#fxhash-projects .fxhash-grid .fxhash-card .card__col-1,
+#objkt-featured .objkt-grid .objkt-card .card__col-1 {
+  flex-shrink: 0;
+  overflow: hidden;
+}
+
+#editart-projects .editart-grid .link-image,
+#fxhash-projects .fxhash-grid .link-image,
+#objkt-featured .objkt-grid .link-image {
+  flex-shrink: 0;
+  width: 100%;
+  aspect-ratio: 1;
+}
+
+#editart-projects .editart-grid .title,
+#fxhash-projects .fxhash-grid .title,
+#objkt-featured .objkt-grid .title {
+  font-size: var(--nft-card-title-size);
+  font-weight: 600;
+  line-height: 1.25;
+  color: #f2f2f4;
+  text-decoration: none;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+#editart-projects .editart-grid .title:hover,
+#fxhash-projects .fxhash-grid .title:hover,
+#objkt-featured .objkt-grid .title:hover {
+  color: #ffffff;
+}
+
+#editart-projects .editart-grid .text,
+#fxhash-projects .fxhash-grid .text,
+#objkt-featured .objkt-grid .text,
+#objkt-featured .objkt-grid .objkt-card__desc {
+  font-size: var(--nft-card-text-size);
+  padding-top: 0.4rem;
+  margin: 0;
+  line-height: 1.35;
+  color: rgba(255, 255, 255, 0.58);
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  word-break: break-word;
+}
+
+#editart-projects .editart-grid .tags,
+#fxhash-projects .fxhash-grid .tags,
+#objkt-featured .objkt-grid .tags,
+#objkt-featured .objkt-grid .objkt-card__meta {
+  font-size: var(--nft-card-meta-size);
+  font-style: normal;
+  margin-top: auto;
+  padding-top: 0.5em;
+  color: rgba(255, 255, 255, 0.42);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+
+#objkt-featured .objkt-grid .objkt-card__meta a {
+  color: rgba(255, 255, 255, 0.55);
+  text-decoration: none;
+}
+
+#objkt-featured .objkt-grid .objkt-card__meta a:hover {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+@container nft-cards (min-width: 28rem) {
+  #editart-projects .editart-grid,
+  #fxhash-projects .fxhash-grid,
+  #objkt-featured .objkt-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@container nft-cards (min-width: 42rem) {
+  #editart-projects .editart-grid,
+  #fxhash-projects .fxhash-grid,
+  #objkt-featured .objkt-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@container nft-cards (min-width: 56rem) {
+  #editart-projects .editart-grid,
+  #fxhash-projects .fxhash-grid,
+  #objkt-featured .objkt-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
+
+@container nft-cards (min-width: 70rem) {
+  #editart-projects .editart-grid,
+  #fxhash-projects .fxhash-grid,
+  #objkt-featured .objkt-grid {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+@container nft-cards (max-width: 20rem) {
+  #editart-projects .editart-grid,
+  #fxhash-projects .fxhash-grid,
+  #objkt-featured .objkt-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+@supports not (container-type: inline-size) {
+  #editart-projects .editart-grid,
+  #fxhash-projects .fxhash-grid,
+  #objkt-featured .objkt-grid {
+    grid-template-columns: repeat(auto-fill, minmax(min(100%, 14rem), 1fr));
+  }
+}

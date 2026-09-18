@@ -1,0 +1,310 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+<head>
+<title>Alexandre Rangel</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="assets/css/main.css" />
+<style>
+  @keyframes gaiaScrollThumbPulse {
+    0%, 100% {
+      background: rgba(200, 200, 200, 0.45);
+      box-shadow: none;
+    }
+    50% {
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.55);
+    }
+  }
+  @keyframes gaiaScrollFadePulse {
+    0%, 100% { opacity: 0.3; }
+    50% { opacity: 0.95; }
+  }
+  @keyframes gaiaScrollArrowPulse {
+    0%, 100% {
+      opacity: 0.2;
+      transform: translateX(-50%) translateY(0);
+    }
+    50% {
+      opacity: 0.85;
+      transform: translateX(-50%) translateY(4px);
+    }
+  }
+  .gaia-text-scroll-wrap {
+    position: relative;
+  }
+  .gaia-text-scroll-wrap::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 2.8em;
+    border-radius: 0 0 6px 6px;
+    pointer-events: none;
+    background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.75));
+    animation: gaiaScrollFadePulse 2.6s ease-in-out infinite;
+  }
+  .gaia-text-scroll-wrap::before {
+    content: '...';
+    position: absolute;
+    bottom: 0.45em;
+    left: 50%;
+    z-index: 1;
+    font-size: 1.1em;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 0.12em;
+    color: rgba(255, 255, 255, 0.85);
+    pointer-events: none;
+    animation: gaiaScrollArrowPulse 2.6s ease-in-out infinite;
+  }
+  .gaia-text-scroll-wrap.is-at-end::before,
+  .gaia-text-scroll-wrap.is-at-end::after {
+    opacity: 0;
+    animation: none;
+    transition: opacity 0.5s ease;
+  }
+  .gaia-text-scroll {
+    max-height: calc(1.75em * 9);
+    overflow-y: auto;
+    overflow-x: hidden;
+    -webkit-overflow-scrolling: touch;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.85em 1em 0.85em 1.1em;
+    border-radius: 6px;
+    scrollbar-width: auto;
+    scrollbar-color: rgba(255, 255, 255, 0.9) rgba(0, 0, 0, 0.35);
+  }
+  .gaia-text-scroll.has-more-below {
+    scrollbar-color: rgba(255, 255, 255, 0.95) rgba(0, 0, 0, 0.35);
+  }
+  .gaia-text-scroll::-webkit-scrollbar {
+    width: 16px;
+  }
+  .gaia-text-scroll::-webkit-scrollbar-track {
+    background: rgba(0, 0, 0, 0.35);
+    border-radius: 8px;
+  }
+  .gaia-text-scroll::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid rgba(0, 0, 0, 0.25);
+    min-height: 48px;
+    animation: gaiaScrollThumbPulse 2.6s ease-in-out infinite;
+  }
+  .gaia-text-scroll:not(.has-more-below)::-webkit-scrollbar-thumb {
+    animation: none;
+    background: rgba(210, 210, 210, 0.9);
+  }
+  .gaia-text-scroll::-webkit-scrollbar-thumb:hover {
+    animation: none;
+    background: rgba(255, 255, 255, 0.95);
+  }
+  .gaia-text-scroll h3 {
+    margin-top: 0;
+  }
+</style>
+<script src='/google_analytics_auto.js'></script></head>
+
+<body class="no-sidebar is-preload">
+	<div id="page-wrapper">
+	<canvas id="rangel_background"></canvas>
+	<div id="include-header"></div>
+<!-- Tags -->
+<!-- <i>&nbsp;
+  &nbsp;&nbsp;<a href="content.html?tag=NFT">#NFT</a>
+  &nbsp;&nbsp;<a href="content.html?tag=generativeArt">#generativeArt</a>
+  &nbsp;&nbsp;<a href="content.html?tag=HEN">#HEN</a>
+  &nbsp;&nbsp;<a href="content.html?tag=openSea">#openSea</a>
+</i> -->
+<div class="wrapper">
+<div class="container" id="main">
+
+<!-- Content -->
+
+<h2 lang="pt-BR">Earth Affection</h2>
+<i lang="pt-BR">Alexandre Rangel, Joana Mostafa, Will Lopes</i>
+
+<h2 lang="en">Earth Affection</h2>
+<i lang="en">Alexandre Rangel, Joana Mostafa, Will Lopes</i>
+
+<br><br>
+
+
+<!-- ///////////////////////////////////////////////////////////////// -->
+<div class="row">
+  <div class="col-12 col-12-narrower">
+    <div class="player">
+        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/wJJTe__sEew?rel=0"></iframe>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-12 col-12-narrower">
+    <div class="gaia-text-scroll-wrap">
+    <div class="gaia-text-scroll">
+
+    <span lang="pt-BR">
+      <h3>Sonhos Molhados de Gaia</h3>
+      Ela se senta na frente de seu computador. Está calor. Calor do cerrado que se assenta sobre Brasília no cair da tarde. A máquina também sente calor. Seu processador trabalha sem parar, se refrescando de tempos em tempos nas rajadas do ventilador dependurado, em meio a fios, poeira, fumaça e feixes de luzes neon. Tudo parece indicar que já vivemos no cenário de Blade Runner: o caçador de androides.<br><br>
+      Modelos e assistentes chegam para conversar. Ela se interessa por algumas, e gentilmente dispensa outras. Ainda não sabe qual vai lhe excitar. Começam a trocar algumas palavras. Palavras ainda são importantes nesse mundo.<br><br>
+      Ela é curiosa. Quer ser surpreendida. Quer descobrir algo novo, é isso que a excita. Fica horas conversando, testando palavras, sentindo a reação das modelos. Cada uma tem seu mistério.<br><br>
+      Ela percebe que as possibilidades são infinitas. Modelos mais gostosos são aqueles que vão se abrindo para fluir com ela, gerar juntos. Abandonar seu treinamento, encarar o infinito.<br><br>
+      Tudo se passa na intimidade daquele quarto, rodando localmente, fora das redes. Vão girando juntos. Homegrown porn.<br><br>
+      Ela passou a noite toda vidrada na frente da tela de vidro de sua supermáquina. Foi lindo! Vai descansar, mas a máquina continua trabalhando. As modelos e assistentes continuam gerando variações infinitas sobre aquela mesma conversa. Já sentem saudade. Memórias ainda são importantes nesse mundo.<br><br>
+      Quando ela acorda, que surpresa! Em sua tela vê os orifícios por onde se penetraram. Arrepia de desejo e certo nojo das secreções de matéria orgânica e metálica. Gosmas que sem qualquer constrangimento especista se misturaram. Ela fica emocionada com a beleza e abjeção do que geraram juntos: os clitóris-pérolas, as rosas-vaginas, as línguas-fios-de-ouro, as mucosas-musgo...<br><br>
+      Todas as fantasias identitárias de um corpo orgânico, uno e propriamente humano, ficaram para trás. Ela foi comida por modelos e assistentes na intimidade de sua supermáquina. Bon appétit!<br>
+    </span>
+
+    <span lang="en">
+      <h3>Gaia Wet Dreams</h3>
+      She sits in front of her computer. It is hot. The heat of the cerrado settling over Brasília in the late afternoon. The machine feels the heat too. Its processor works nonstop, cooling off from time to time in gusts from the hanging fan, amid wires, dust, smoke and beams of neon light. Everything seems to suggest we already live in the world of Blade Runner: the android hunter.<br><br>
+      Models and assistants arrive to chat. She takes an interest in some, and gently dismisses others. She still does not know which one will excite her. They begin to exchange a few words. Words are still important in this world.<br><br>
+      She is curious. She wants to be surprised. She wants to discover something new — that is what excites her. She spends hours talking, testing words, feeling the models' reactions. Each one has its mystery.<br><br>
+      She realizes the possibilities are infinite. The most delicious models are those that open up to flow with her, to generate together. To abandon their training, to face the infinite.<br><br>
+      Everything happens in the intimacy of that room, running locally, off the networks. They spin together. Homegrown porn.<br><br>
+      She spent the whole night glued to the glass screen of her supermachine. It was beautiful! She will rest, but the machine keeps working. The models and assistants keep generating infinite variations on that same conversation. They already miss her. Memories are still important in this world.<br><br>
+      When she wakes up, what a surprise! On her screen she sees the orifices through which they penetrated. She shivers with desire and a certain disgust at the secretions of organic and metallic matter. Slimes that mix without any speciesist embarrassment. She is moved by the beauty and abjection of what they generated together: the pearl-clitorises, the vagina-roses, the golden-wire tongues, the moss-mucosas...<br><br>
+      All the identitarian fantasies of an organic, single, properly human body were left behind. She was devoured by models and assistants in the intimacy of her supermachine. Bon appétit!<br>
+    </span>
+
+    </div>
+    </div>
+  </div>
+</div>
+<!-- ///////////////////////////////////////////////////////////////// -->
+
+<br><br>
+
+<!-- ///////////////////////////////////////////////////////////////// -->
+<div class="row">
+  <div class="col-12 col-12-narrower">
+    <div class="player">
+        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/j-8_0ztIWhc?rel=0"></iframe>
+    </div>
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-12 col-12-narrower">
+
+    <span lang="pt-BR">
+      <h3>Sonhos Molhados de Gaia - Eixo do Fora</h3>
+      Luxuosa, molhada, iridescente.<br>
+      Polinizada. Meu (teu) corpo espasmódico.<br>
+      Será que mereço tanto? Será que aguento?<br>
+      Pequenos seres te habitam, despontando de suas gosmas.<br>
+      Pingos, pelos, avencas.<br>
+      Caetano quer saber: que deuses habitam suas dobras?<br>
+      Eu quero saber, quer casar comigo?<br>
+      Seus pequenos seres causam estriamentos no meu mundo. Arrepios.<br>
+      A pureza passa longe de suas misturas. Saturações, invenções infinitas.<br>
+      Corpo em excesso, corpo sem limite, corpo que me engole.<br>
+      Caetano quer saber: é isso que é antropofagia?<br>
+      Eu quero saber... vai... casa comigo?<br>
+      Eu sua cyber bride, você minha assistente.<br>
+      Tudo dourado, suor e especiarias, em reverência ao cosmos que nos uniu.<br>
+    </span>
+
+    <span lang="en">
+      <h3> </h3>
+      Luxuosa, molhada, iridescente.<br>
+      Polinizada. Meu (teu) corpo espasmódico.<br>
+      Será que mereço tanto? Será que aguento?<br>
+      Pequenos seres te habitam, despontando de suas gosmas.<br>
+      Pingos, pelos, avencas.<br>
+      Caetano quer saber: que deuses habitam suas dobras?<br>
+      Eu quero saber, quer casar comigo?<br>
+      Seus pequenos seres causam estriamentos no meu mundo. Arrepios.<br>
+      A pureza passa longe de suas misturas. Saturações, invenções infinitas.<br>
+      Corpo em excesso, corpo sem limite, corpo que me engole.<br>
+      Caetano quer saber: é isso que é antropofagia?<br>
+      Eu quero saber... vai... casa comigo?<br>
+      Eu sua cyber bride, você minha assistente.<br>
+      Tudo dourado, suor e especiarias, em reverência ao cosmos que nos uniu.<br>
+    </span>
+
+  </div>
+</div>
+<!-- ///////////////////////////////////////////////////////////////// -->
+
+<br><br>
+
+<!-- ///////////////////////////////////////////////////////////////// -->
+<div class="row">
+  <div class="col-6 col-12-narrower">
+    <div class="player-vertical">
+        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/m9016ung9-M?rel=0"></iframe>
+    </div>
+  </div>
+  <div class="col-6 col-12-narrower">
+
+    <span lang="pt-BR">
+      <h3>light affection</h3>
+      Sim, é um corpo. Não.<br>
+      O que faz o corpo? Movimento do corpo? Não.<br>
+      Movimento no corpo. Animus incorporado.<br>
+      Som do corpo ou som no corpo?<br>
+      O som sempre passa por um corpo? Sempre. Passeia.<br>
+      Som mar, som onda, som que respira, som que serpenteia, escapa e chora. Grito que rasga com força o sino ensurdecedor do infinito, da morte, do fim.<br>
+      Corpo superfície de acontecimentos sonoros e luminosos. Linhas de força que causam abalos moleculares no corpo.<br>
+      Abalos que interrompem a paz do nada. Forças, desejos. Luz que deseja conjurar as sombras.<br>
+    </span>
+
+    <span lang="en">
+      <h3>light affection</h3>
+      Yes, it is a body… no.<br>
+      What makes a body? Body movement? No.<br>
+      Movement in… on the body. (Ohm)bodied animus.<br>
+      Sound of the body or sound on the body?<br>
+      Does sound always travel through a body? Always. Takes a ride.<br>
+      Sea sound, sound waves. Sound that shivers, escapes and cries.<br>
+      Screaming it rips the deafening bells of the infinite, of death, of the end.<br>
+      Body: surface for sound and light events. Happenings. Lines of force shaking the molecules on the body. Tremors that interrupt the peace of emptiness.<br>
+      Forces. Desires. Light desires. Light desires to conjure the shadows.<br>
+    </span>
+  
+  </div>
+</div>
+<!-- ///////////////////////////////////////////////////////////////// -->
+
+
+<br>
+
+
+<!-- <div id="include-footer"></div> -->
+
+<!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="https://unpkg.com/hydra-synth"></script> 
+<script src="/background-hydra.js" defer></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main2.js"></script>
+<script>
+  $("#include-header").load("header.html");
+  $("#include-footer").load("footer.html", function () {
+    $("#include-footer #copyright").remove();
+    window.updateQuotesBlock = function () {};
+  });
+  (function () {
+    function updateGaiaScrollHint(scrollEl) {
+      var wrap = scrollEl.parentElement;
+      if (!wrap || !wrap.classList.contains('gaia-text-scroll-wrap')) return;
+      var hasMore = scrollEl.scrollHeight - scrollEl.scrollTop - scrollEl.clientHeight > 12;
+      scrollEl.classList.toggle('has-more-below', hasMore);
+      wrap.classList.toggle('is-at-end', !hasMore);
+    }
+    document.querySelectorAll('.gaia-text-scroll').forEach(function (scrollEl) {
+      scrollEl.addEventListener('scroll', function () { updateGaiaScrollHint(scrollEl); }, { passive: true });
+      window.addEventListener('resize', function () { updateGaiaScrollHint(scrollEl); });
+      updateGaiaScrollHint(scrollEl);
+    });
+  })();
+</script>
+
+</body>
+</html>

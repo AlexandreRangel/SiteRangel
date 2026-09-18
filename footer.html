@@ -1,0 +1,69 @@
+<!-- Art Quotes -->
+<div id="copyright" class="container">
+	<div class="col-lg-12" id="quotes-block"></div>
+</div>
+<script>
+	// Available globally; also runs once when footer.html is injected (main2.js may run earlier).
+	window.updateQuotesBlock = function(lang) {
+		var language = (lang || document.documentElement.lang || navigator.language || "pt").toLowerCase();
+		if (language.indexOf("en") === 0) {
+			language = "en";
+		} else {
+			language = "pt";
+		}
+		var host = location.hostname;
+		var useLocalQuotes = host === "www.alexandrerangel.art.br" || host === "alexandrerangel.art.br";
+		var quotesUrl = (useLocalQuotes ? "quotes.php" : "https://www.alexandrerangel.art.br/quotes.php") + "?lang=" + language;
+		var block = document.getElementById("quotes-block");
+		if (block) {
+			block.innerHTML =
+				'<iframe src="' + quotesUrl + '" width="100%" height="120" sandbox="allow-same-origin allow-scripts allow-forms" scrolling="no" style="overflow:hidden;border:0;display:block" frameborder="0"></iframe>';
+		}
+	};
+	(function () {
+		var stored = localStorage.getItem("currentLanguage") || "pt-BR";
+		window.updateQuotesBlock(stored.indexOf("en") === 0 ? "en" : "pt");
+	})();
+</script>
+
+<div id="footer2" class="container">
+	<div class="row">
+		<section class="col-12">
+			<div class="row gtr-0">
+				<!-- Sites Column -->
+				<div class="col-3 col-12-mobile">
+					<h4>Sites</h4>
+					<ul style="list-style: none; padding-left: 0;">
+						<li><a href="https://www.alexandrerangel.art.br"><i class="icon brands fa-dribbble"></i> alexandrerangel.art.br</a></li>
+						<li><a href="https://www.pixelmandala.com.br"><i class="icon brands fa-dribbble"></i> pixelmandala.com.br</a></li>
+						<li><a href="https://www.quasecinema.org"><i class="icon brands fa-dribbble"></i> quasecinema.org</a></li>
+					</ul>
+				</div>
+				
+				<!-- Social Column -->
+				<div class="col-4 col-12-mobile">
+					<h4>Socials</h4>
+					<ul style="list-style: none; padding-left: 0;">
+						<li><a href="https://www.instagram.com/quasecinema/"><i class="icon brands fa-instagram"></i> instagram/quasecinema</a></li>
+						<li><a href="https://www.tiktok.com/@quasecinema"><i class="icon brands fa-tiktok"></i> TikTok/quasecinema</a></li>
+						<li><a href="https://twitter.com/AlexandreRangel"><i class="icon brands fa-twitter"></i> twitter/AlexandreRangel</a></li>
+						<li><a href="https://www.youtube.com/@quasecinemalab"><i class="icon brands fa-youtube"></i> youtube.com/@quasecinemalab</a></li>
+						<!-- <li><a href="https://www.facebook.com/QuaseCinema/"><i class="icon brands fa-facebook-f"></i> facebook/QuaseCinema</a></li> -->
+						<!-- <li><a href="https://rodeo.club/@alexandre-rangel"><i class="icon brands fa-grav"></i> rodeo.club/@alexandre-rangel</a></li> -->
+					</ul>
+				</div>
+				
+				<!-- NFT Column -->
+				<div class="col-3 col-12-mobile">
+					<h4>NFTs</h4>
+					<ul style="list-style: none; padding-left: 0;">
+						<li><a href="https://objkt.com/profile/tz1SvPd1aUYZSkr22JTdRzUEGMb6ZjoPEXTz/created"><i class="icon brands fa-dribbble"></i> objkt.com</a></li>
+						<li><a href="https://www.fxhash.xyz/u/AlexandreRangel"><i class="icon brands fa-dribbble"></i> fx(hash)</a></li>
+						<li><a href="https://www.editart.xyz/user/tz1SvPd1aUYZSkr22JTdRzUEGMb6ZjoPEXTz"><i class="icon brands fa-dribbble"></i> EditArt</a></li>
+						<!-- <li><a href="https://opensea.io/AlexandreRangel?tab=created"><i class="icon brands fa-dribbble"></i> OpenSea</a></li> -->
+					</ul>
+				</div>
+			</div>
+		</section>
+	</div>
+</div>

@@ -1,0 +1,1284 @@
+{
+  "_howTo": "editArtProjects: um card por série EditArt. fxhashProjects: um card por projeto fx(hash) (link para fxhash.xyz). tokens: obras no objkt; name ajuda a identificar no JSON. Remova entradas que não quiser exibir.",
+  "profileUrl": "https://objkt.com/users/tz1SvPd1aUYZSkr22JTdRzUEGMb6ZjoPEXTz/created",
+  "editArtProfileUrl": "https://www.editart.xyz/user/tz1SvPd1aUYZSkr22JTdRzUEGMb6ZjoPEXTz",
+  "editArtProjects": [
+    {
+      "name": "Crystal Glitch",
+      "url": "https://www.editart.xyz/series/KT1RvNzvhAH7vZF7WSKMe3HEZxuK198GYGmV",
+      "contract": "KT1RvNzvhAH7vZF7WSKMe3HEZxuK198GYGmV",
+      "description": "Alexandre Rangel, 2023 https://alexandrerangel.art.br Made with Hydra + Sonic Pi. ( click to start audio )",
+      "imageUri": "ipfs://QmWZBEbjuq2f577a8HQYVLKz5ihrQyHBsqFMKFCNcQHapi"
+    },
+    {
+      "name": "Verti-Horizon",
+      "url": "https://www.editart.xyz/series/KT1LVvVYdnpcMqFohkdtzoTET9K7PvkY6txk",
+      "contract": "KT1LVvVYdnpcMqFohkdtzoTET9K7PvkY6txk",
+      "description": "Alexandre Rangel, 2025 www.alexandrerangel.art.br Genuary prompt 'Vertical or horizontal lines only'. Click on the canvas to generate the soundscape.",
+      "imageUri": "ipfs://QmPFGvD78HtgWSq3QHT2r5wqVnFpZy4AJ4hKZ8dunHkuQG"
+    }
+  ],
+  "fxhashProfileUrl": "https://www.fxhash.xyz/u/AlexandreRangel",
+  "fxhashProjects": [
+    {
+      "name": "Alien DNA",
+      "slug": "alien-dna",
+      "fxhashId": 31249,
+      "url": "https://www.fxhash.xyz/generative/slug/alien-dna",
+      "contract": "KT1EfsNuqwLAWDd3o4pvfUx1CAh5GMdTrRvr",
+      "description": "Alexandre Rangel, 2024 https://www.alexandrerangel.art.br",
+      "imageUri": "ipfs://QmV3kcrbNKG5f6Yab7HRjjTDDpsYKHo93EPu3gPTWDPqdS"
+    },
+    {
+      "name": "android shadows",
+      "slug": "android-shadows",
+      "fxhashId": 24479,
+      "url": "https://www.fxhash.xyz/generative/slug/android-shadows",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2023 www.alexandrerangel.art.br",
+      "imageUri": "ipfs://QmTWELR5PfFECKKmtf6ARmbsgUwjUKVaHzChpudphTfwQT"
+    },
+    {
+      "name": "filter slice",
+      "slug": "filter-slice",
+      "fxhashId": 9482,
+      "url": "https://www.fxhash.xyz/generative/slug/filter-slice",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022 www.alexandrerangel.art.br",
+      "imageUri": "ipfs://QmTB8ejPx5qDPK6BhADUgHqCfKhjf6HpgmfgyXh1L4nVLe"
+    },
+    {
+      "name": "fx(hash): Genesis",
+      "url": "https://objkt.com/collection/KT1KEa8z6vWXDJrVqtMrAeDVzsvxat3kHaCE",
+      "contract": "KT1KEa8z6vWXDJrVqtMrAeDVzsvxat3kHaCE",
+      "fxhashId": null,
+      "slug": null,
+      "description": "This is the genesis collection (beta) for fxhash, a platform to mint Generative Tokens on the Tezos blockchain.",
+      "imageUri": "ipfs://QmP1fDeWcy9jF4BcXLMyZvfAMjohtTCBCboJFEHhLGxvYU"
+    },
+    {
+      "name": "hash clock",
+      "slug": "hash-clock",
+      "fxhashId": 13983,
+      "url": "https://www.fxhash.xyz/generative/slug/hash-clock",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022 www.alexandrerangel.art.br",
+      "imageUri": "ipfs://QmQ1gQhxNS5MEWihZBoYcfMDkW1u8tddB9w8HiNQAeExNi"
+    },
+    {
+      "name": "hash egg",
+      "slug": "hash-egg",
+      "fxhashId": 258,
+      "url": "https://www.fxhash.xyz/generative/slug/hash-egg",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "'hash eggs' Alexandre Rangel, 2021 Hash codes emerging as shapes, colors and animations. Eggs of a new art & technology renaissance. Genesis token on fx(hash), made with Hydra programming. (10% chance for generating a shining egg.) www.alexandrerangel.art.br instagram @quasecinema twitter @AlexandreRangel",
+      "imageUri": "ipfs://QmeZtnsACWjYVEwgfU3keohJaQZVuHad2AdFU8UjjRSJiN"
+    },
+    {
+      "name": "Homage to Vangelis",
+      "slug": "homage-to-vangelis",
+      "fxhashId": 13429,
+      "url": "https://www.fxhash.xyz/generative/slug/homage-to-vangelis",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Homage to Vangelis: The hesitation and satisfaction of the algorithm Alexandre Rangel, 2022",
+      "imageUri": "ipfs://Qmcm5Mdm6cz3kSYtQMpRmRt2PHZ4JKGMAZqoPPUkrnmFwF"
+    },
+    {
+      "name": "inside the tesseract",
+      "slug": "inside-the-tesseract",
+      "fxhashId": 12903,
+      "url": "https://www.fxhash.xyz/generative/slug/inside-the-tesseract",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022 www.alexandrerangel.art.br s: save still made with Sonic Pi + cables.gl",
+      "imageUri": "ipfs://QmYLQFWJTi8dxwEmPjN5RKSEVQibaf7ivftANegUYwF5Aj"
+    },
+    {
+      "name": "instructions for poems",
+      "slug": "instructions-for-poems",
+      "fxhashId": 15912,
+      "url": "https://www.fxhash.xyz/generative/slug/instructions-for-poems",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022 www.alexandrerangel.art.br click to start sound",
+      "imageUri": "ipfs://QmNrcM5To6YvFun5M7urQRBvYfawgE6R8YroxPqbtjv8nB"
+    },
+    {
+      "name": "Lotus Redux",
+      "slug": "lotus-redux",
+      "fxhashId": 12192,
+      "url": "https://www.fxhash.xyz/generative/slug/lotus-redux",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022 www.alexandrerangel.art.br",
+      "imageUri": "ipfs://QmcjUG4oQaqpvTVrm478USURF1Zovg8zF6MGwEX2nxcNZs"
+    },
+    {
+      "name": "path tracing",
+      "slug": "path-tracing",
+      "fxhashId": 26498,
+      "url": "https://www.fxhash.xyz/generative/slug/path-tracing",
+      "contract": "KT1EfsNuqwLAWDd3o4pvfUx1CAh5GMdTrRvr",
+      "description": "Alexandre Rangel, 2023 https://alexandrerangel.art.br",
+      "imageUri": "ipfs://QmTuXXGdbGJsZv2DzfCXksy7639YWe4NE5XyvyA5ZGVSym"
+    },
+    {
+      "name": "Phantom Mask",
+      "slug": "phantom-mask",
+      "fxhashId": 10095,
+      "url": "https://www.fxhash.xyz/generative/slug/phantom-mask",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Multidimensional apparitions via mathematical geometric structures in the blockchain. Figurative representational tradition meets code pattern ordering as dream-like robot heads. The tradition of face mask making and representation in modern art in dialogue with the ever changing all-possible computer programs and always present unforeseen glitch errors. As a meta-language, the computer reads and mixes human and android facial features, as the automatic creation mimics its creator. The robot generative portraits are a looking glass into the source code of the artwork. Touch to voice the void of the hash. Alexandre Rangel, 2022 www.alexandrerangel.art.br",
+      "imageUri": "ipfs://QmabPLMo5VwuRmMRqqdLoVChFdNKCJNG7yjMriWg1RJ2zD"
+    },
+    {
+      "name": "phantom mobile",
+      "slug": "phantom-mobile",
+      "fxhashId": 11558,
+      "url": "https://www.fxhash.xyz/generative/slug/phantom-mobile",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022 www.alexandrerangel.art.br",
+      "imageUri": "ipfs://QmQy5BpzmEbmrvRPBqFKpcJMs7vZ2vPfE9MH1bxnhkD9nz"
+    },
+    {
+      "name": "Phantom Sculpture",
+      "slug": "phantom-sculpture",
+      "fxhashId": 11062,
+      "url": "https://www.fxhash.xyz/generative/slug/phantom-sculpture",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022 www.alexandrerangel.art.br",
+      "imageUri": "ipfs://Qmarnr4BaarCt4FdwxcAmP32EiVUEyr8SGzzxChSuMNLQW"
+    },
+    {
+      "name": "portal and path",
+      "slug": "portal-and-path",
+      "fxhashId": 10431,
+      "url": "https://www.fxhash.xyz/generative/slug/portal-and-path",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022",
+      "imageUri": "ipfs://QmTp6oefgtUf5zXjb4Ya2dsndgufTHfajJfzByneZXggrU"
+    },
+    {
+      "name": "Relativity hypothesis",
+      "slug": "relativity-hypothesis",
+      "fxhashId": 12070,
+      "url": "https://www.fxhash.xyz/generative/slug/relativity-hypothesis",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022 www.alexandrerangel.art.br",
+      "imageUri": "ipfs://QmQdmgi4xZWSTwY8FJmukmwcTSSzvWJCLK27Jy5m2M5RaS"
+    },
+    {
+      "name": "software study for peace",
+      "slug": "software-study-for-peace",
+      "fxhashId": 10790,
+      "url": "https://www.fxhash.xyz/generative/slug/software-study-for-peace",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022 (click to start sound)",
+      "imageUri": "ipfs://QmVAvbM2zaJySwch2X99PRMpbAMb4BzMqQ7uZXr3XDGwwH"
+    },
+    {
+      "name": "tales of light & motion",
+      "slug": "tales-of-light-and-motion",
+      "fxhashId": 22537,
+      "url": "https://www.fxhash.xyz/generative/slug/tales-of-light-and-motion",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022 alexandrerangel.art.br",
+      "imageUri": "ipfs://Qmc2RZjGfcE6kFp3RNmL4ecfNSRSxSzbysQ9mXmrFAE72k"
+    },
+    {
+      "name": "the fabric of time as contemporary ruins",
+      "slug": "the-fabric-of-time-as-contemporary-ruins",
+      "fxhashId": 16670,
+      "url": "https://www.fxhash.xyz/generative/slug/the-fabric-of-time-as-contemporary-ruins",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022 www.alexandrerangel.art.br",
+      "imageUri": "ipfs://QmWqnUyxX1hVPbtepDq3ozcQRpMGr2uvtvkiJgCEmaXcVk"
+    },
+    {
+      "name": "the seers of thought",
+      "slug": "the-seers-of-thought",
+      "fxhashId": 18139,
+      "url": "https://www.fxhash.xyz/generative/slug/the-seers-of-thought",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022 https://alexandrerangel.art.br Click to start audio.",
+      "imageUri": "ipfs://QmQZnToAVvQCHQjkour9WGu6n8rs12yBLCkuvHxn52pGfs"
+    },
+    {
+      "name": "time crystal",
+      "slug": "time-crystal",
+      "fxhashId": 15525,
+      "url": "https://www.fxhash.xyz/generative/slug/time-crystal",
+      "contract": "KT1U6EHmNxJTkvaWJ4ThczG4FSDaHC21ssvi",
+      "description": "Alexandre Rangel, 2022 www.alexandrerangel.art.br",
+      "imageUri": "ipfs://QmTxKRmfVt4uNWRgKyhabwbrc8oUapZaXNh9g36bjCRY2s"
+    },
+    {
+      "name": "unidentified-track",
+      "slug": "unidentified-track",
+      "fxhashId": 31424,
+      "url": "https://www.fxhash.xyz/generative/slug/unidentified-track",
+      "contract": "KT1EfsNuqwLAWDd3o4pvfUx1CAh5GMdTrRvr",
+      "description": "Alexandre Rangel, 2024 www.alexandrerangel.art.br",
+      "imageUri": "ipfs://QmUFiqMdT8SpKq3imHSpnzkrd8PX6wCHpwNRwzbJZrU48G"
+    }
+  ],
+  "tokens": [
+    {
+      "contract": "KT1TJUPT1ic3XfD1oTWmsEZdFxngLCXyDs2K",
+      "id": "9",
+      "name": "Tezos Dynamic Portrait"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "868905",
+      "name": "Phantom Mobile"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "868540",
+      "name": "sculpting-quantum-sounds"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "867661",
+      "name": "Ralativity 1/3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "867663",
+      "name": "Relativity 2/3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "867666",
+      "name": "Relativity 3/3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "863974",
+      "name": "the machine is weaving rugs"
+    },
+    {
+      "contract": "KT1TJUPT1ic3XfD1oTWmsEZdFxngLCXyDs2K",
+      "id": "15",
+      "name": "Mycelium Dream 1/3"
+    },
+    {
+      "contract": "KT1TJUPT1ic3XfD1oTWmsEZdFxngLCXyDs2K",
+      "id": "16",
+      "name": "Mycelium Dream 2/3"
+    },
+    {
+      "contract": "KT1TJUPT1ic3XfD1oTWmsEZdFxngLCXyDs2K",
+      "id": "17",
+      "name": "Mycelium Dream 3/3"
+    },
+    {
+      "contract": "KT1V2UBYSbfpzZxnevWMCf89BiNrEcmZA28X",
+      "id": "120",
+      "name": "Compression and Release 119/120"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "818084",
+      "name": "path tracing glitch"
+    },
+    {
+      "contract": "KT1TJUPT1ic3XfD1oTWmsEZdFxngLCXyDs2K",
+      "id": "8",
+      "name": "RIPHEN | we still here"
+    },
+    {
+      "contract": "KT1TJUPT1ic3XfD1oTWmsEZdFxngLCXyDs2K",
+      "id": "7",
+      "name": "RIPHEN"
+    },
+    {
+      "contract": "KT1TJUPT1ic3XfD1oTWmsEZdFxngLCXyDs2K",
+      "id": "6",
+      "name": "psycho-pupil"
+    },
+    {
+      "contract": "KT1TJUPT1ic3XfD1oTWmsEZdFxngLCXyDs2K",
+      "id": "5",
+      "name": "Copacabana Glitch Hotel"
+    },
+    {
+      "contract": "KT1TJUPT1ic3XfD1oTWmsEZdFxngLCXyDs2K",
+      "id": "4",
+      "name": "Copacabana Glitch Palace"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "734099",
+      "name": "the magnificent path of the tumbling coin"
+    },
+    {
+      "contract": "KT1TJUPT1ic3XfD1oTWmsEZdFxngLCXyDs2K",
+      "id": "3",
+      "name": "dawn of mechanics"
+    },
+    {
+      "contract": "KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW",
+      "id": "11029",
+      "name": "seeking contact"
+    },
+    {
+      "contract": "KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW",
+      "id": "7369",
+      "name": "Orbs"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "651794",
+      "name": "corrupted-brasilia-fact07"
+    },
+    {
+      "contract": "KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW",
+      "id": "6645",
+      "name": "brasilia3d-A01"
+    },
+    {
+      "contract": "KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW",
+      "id": "4180",
+      "name": "raytracer"
+    },
+    {
+      "contract": "KT1LjmAdYQCLBjwv4S2oFkEzyHVkomAf5MrW",
+      "id": "248",
+      "name": "Noturna"
+    },
+    {
+      "contract": "KT18pVpRXKPY2c4U2yFEGSH3ZnhB2kL8kwXS",
+      "id": "1593",
+      "name": "seed j"
+    },
+    {
+      "contract": "KT18pVpRXKPY2c4U2yFEGSH3ZnhB2kL8kwXS",
+      "id": "1570",
+      "name": "seed g"
+    },
+    {
+      "contract": "KT1TJUPT1ic3XfD1oTWmsEZdFxngLCXyDs2K",
+      "id": "1",
+      "name": "seed j"
+    },
+    {
+      "contract": "KT1TJUPT1ic3XfD1oTWmsEZdFxngLCXyDs2K",
+      "id": "0",
+      "name": "seed g"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "535691",
+      "name": "hydra tones"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "504101",
+      "name": "software sunset"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "339142",
+      "name": "dance talk"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "338819",
+      "name": "meditate/modulate into the glitch brain"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "319947",
+      "name": "sensual light mask"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "304835",
+      "name": "vortex communication - channel 3/3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "304827",
+      "name": "vortex communication - channel 2/3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "304820",
+      "name": "vortex communication - channel 1/3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "303401",
+      "name": "joker"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "293779",
+      "name": "matrix 4"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "282892",
+      "name": "the inverse."
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "280077",
+      "name": "neutral crash - channel 2"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "271013",
+      "name": "neutral crash - channel 1"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "241330",
+      "name": "planet evolution as a glitch map"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "222145",
+      "name": "sunset software"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "216372",
+      "name": "animalia 02"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "216366",
+      "name": "animalia 01"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "214462",
+      "name": "Espada de São Jorge"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "206198",
+      "name": "star super structure"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "202427",
+      "name": "Was it a dream?"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "201402",
+      "name": "200 bars"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "194373",
+      "name": "twin-variation"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "194183",
+      "name": "time is not an emotion 1/3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "194180",
+      "name": "time is not an emotion 2/3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "194178",
+      "name": "time is not an emotion 3/3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "191111",
+      "name": "making bad decisions"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "188690",
+      "name": "trust theorem 1/3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "188687",
+      "name": "trust theorem 2/3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "188686",
+      "name": "trust theorem 3/3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "188676",
+      "name": "trust theorem 1"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "188674",
+      "name": "trust theorem 2"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "188516",
+      "name": "headstone-scriptures"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "186999",
+      "name": "harsh skeleton desire"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "184711",
+      "name": "knot irony"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "183636",
+      "name": "Deus Geometriza"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "180477",
+      "name": "artificial poetry"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "179320",
+      "name": "Chess-Playing Programs and the Problem of Complexity"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "178000",
+      "name": "reversing-crystal"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "177817",
+      "name": "my feelings for you"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "176563",
+      "name": "Comece pelo começo e continue até chegar ao fim; então pare."
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "175152",
+      "name": "wavelenght rhythm"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "173086",
+      "name": "rhythm wavelength"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "172181",
+      "name": "twin traction"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "171837",
+      "name": "float inhabitant"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "167774",
+      "name": "you ask me to stay"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "166792",
+      "name": "offspring-reach"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "165255",
+      "name": "seminative diagraphics"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "164944",
+      "name": "foundation crossover here and now"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "164085",
+      "name": "mechanical-agastopia"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "164069",
+      "name": "missal-ichnology"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "157294",
+      "name": "the fabric of time"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "156748",
+      "name": "accurate-orbit"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "155736",
+      "name": "non-fungible-talisman"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "155532",
+      "name": "HEN-Under-Maintenance"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "154667",
+      "name": "glitching into the singularity heaven"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "151597",
+      "name": "represent interrupt"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "150942",
+      "name": "age-of-the-pixel"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "150538",
+      "name": "prediction reward"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "148971",
+      "name": "electron agency juice"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "147971",
+      "name": "#HENpi"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "146071",
+      "name": "power, corruption and lies"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "145040",
+      "name": "test"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "144831",
+      "name": "mental-ray"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "143359",
+      "name": "machu picchu < > brasilia crystal portal"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "138486",
+      "name": "One thousand pics"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "137622",
+      "name": "moving silently through space"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "134541",
+      "name": "interference-tracks"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "132663",
+      "name": "glitch paintstrokes"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "132610",
+      "name": "inside the tesseract"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "131783",
+      "name": "Cerimony"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "131348",
+      "name": "Schumann-ressonances"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "131051",
+      "name": "The body is an organic mask for the soul"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "126066",
+      "name": "objeto-brasil"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "125859",
+      "name": "MECHA|MASK:A"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "121350",
+      "name": "#HEN100 A crazy patchwork"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "118769",
+      "name": "hypercube transversing dimensions as an extended reality sculpture"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "112447",
+      "name": "#BRobjkt"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "110036",
+      "name": "the moving gears of crypto"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "108289",
+      "name": "Rorschach test"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "107319",
+      "name": "hypnotize"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "104634",
+      "name": "walk of life 1"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "104630",
+      "name": "walk of life 2"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "104601",
+      "name": "walk of life 3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "102617",
+      "name": "moon clock"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "101625",
+      "name": "Wallet-DNA"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "100232",
+      "name": "circle clock"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "100231",
+      "name": "square clock"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "100119",
+      "name": "100-klock"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "98492",
+      "name": "time is my everything - a clock"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "96012",
+      "name": "Einstein-Rosen 4.5d wormhole bridge"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "94722",
+      "name": "random encounters on the blockchain"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "93912",
+      "name": "galaxy-worm-hole"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "91406",
+      "name": "The Doppelgänger Sage : Oracle program #9"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "66066",
+      "name": "toxic1"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "64591",
+      "name": "excruzilhada"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "62368",
+      "name": "resurrection-187.5-live-coding"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "62351",
+      "name": "like tears in the rain"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "61690",
+      "name": "fusca-4"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "60842",
+      "name": "still intact and comfortably outside the event horizon"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "59611",
+      "name": "Quantum Sculpture 117"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "58605",
+      "name": "the book of changes"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "56360",
+      "name": "1829 políticos brasileiros"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "55107",
+      "name": "i trying to remember my dreams"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "55076",
+      "name": "run me, record me, process me"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "53872",
+      "name": "galeria dos estados"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "53840",
+      "name": "rodoviária"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "53244",
+      "name": "void running"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "53225",
+      "name": "void-running"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "52703",
+      "name": "Escalpo"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "45371",
+      "name": "hypercube"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "45326",
+      "name": "Cubos em Dança - versão M"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "45315",
+      "name": "Cubos em Dança - versão L"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "45309",
+      "name": "Cubos em Dança - versão I"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "44959",
+      "name": "Cubos em Dança - versão P"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "40253",
+      "name": "corrupted-brasilia-fact02"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "39837",
+      "name": "corrupted-brasilia-fact06"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "38323",
+      "name": "smiling-mandala"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "38004",
+      "name": "color-xray"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "35405",
+      "name": "circularis-somnia"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "35285",
+      "name": "i-see-plans-within-plans"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "34117",
+      "name": "Novum orbis"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "33535",
+      "name": "SIM"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "33385",
+      "name": "cubes-01"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "32781",
+      "name": "gears-of-crypto"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "32015",
+      "name": "colorfall"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "31573",
+      "name": "Mustang"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "30616",
+      "name": "blue-sky-crying"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "29922",
+      "name": "echo-goo"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "29401",
+      "name": "signal-2"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "29390",
+      "name": "signal-3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "29384",
+      "name": "signal-1"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "29133",
+      "name": "contrasting-3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "29005",
+      "name": "contrasting-2"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "28136",
+      "name": "fusca-3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "27053",
+      "name": "contrasting-1"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "26664",
+      "name": "string-theory-2"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "25455",
+      "name": "string-theory-1"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "24679",
+      "name": "window-04"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "24346",
+      "name": "window-03"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "24341",
+      "name": "window-02"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "24327",
+      "name": "window-01"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "22122",
+      "name": "state-of-mind"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "21086",
+      "name": "7-days-candle"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "18781",
+      "name": "heart-of-the-beholder"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "14423",
+      "name": "age-of-the-phoenix"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "14336",
+      "name": "tales-of-an-older-future"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "12445",
+      "name": "livecoding-blender-sonicpi-and-sunvox"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "10496",
+      "name": "interference9"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "10481",
+      "name": "interference8"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "10462",
+      "name": "interference7"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "10152",
+      "name": "interference6"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "10149",
+      "name": "interference5"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "10102",
+      "name": "interference4"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "10085",
+      "name": "interference-3"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "10082",
+      "name": "interference2"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "10078",
+      "name": "interference"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "10036",
+      "name": "Dynamic_Generative_Mandala_v0.2"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "9423",
+      "name": "Dynamic_Generative_Mandala_v0.1"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "5762",
+      "name": "setor-comercial-sul"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "5661",
+      "name": "the-artist-as-collector"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "5426",
+      "name": "tezos-logo"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "4749",
+      "name": "tezos-timestamp-1615557361"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "4746",
+      "name": "tezos-timestamp-1615556942"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "4626",
+      "name": "tezos-timestamp-1615531262"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "4623",
+      "name": "tezos-timestamp-1615530422"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "4460",
+      "name": "mental-rainbows"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "4262",
+      "name": "roomns-inbetween"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "4254",
+      "name": "fusca-invertido"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "4230",
+      "name": "fusca"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "4189",
+      "name": "shades-of-fahrenheit"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "4182",
+      "name": "A"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "4157",
+      "name": "walk-of-life"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "3999",
+      "name": "fiat-lux"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "3994",
+      "name": "macintosh-install-disk"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "3990",
+      "name": "the-robotz-are-a-coming"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "3983",
+      "name": "Scales"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "3981",
+      "name": "bendy-tracks"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "3975",
+      "name": "track"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "3971",
+      "name": "x"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "3968",
+      "name": "dream-land"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "3961",
+      "name": "blue-sky-mining"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "3783",
+      "name": "Rodoviaria-2007"
+    },
+    {
+      "contract": "KT1RJ6PbjHpwc3M5rw5s2Nbmefwbuwbdxton",
+      "id": "2842",
+      "name": "Mão de Fogo"
+    }
+  ]
+}

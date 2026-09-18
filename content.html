@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="pt-BR">
+
+<head>
+  <title>Alexandre Rangel</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="assets/css/main.css" />
+  <link rel="stylesheet" href="assets/css/content-cards.css" />
+<script src='/google_analytics_auto.js'></script></head>
+
+<body class="no-sidebar is-preload">
+  <div id="page-wrapper">
+    <canvas id="rangel_background"></canvas>
+    <div id="include-header"></div>
+    <div class="wrapper">
+      <div class="container" id="main">
+        <h2 id="titulo-tag"></h2>
+        <section id="cards"></section>
+      </div>
+    </div>
+
+    <div id="include-footer"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/jquery.dropotron.min.js"></script>
+  <script src="assets/js/browser.min.js"></script>
+  <script src="assets/js/breakpoints.min.js"></script>
+  <script src="https://unpkg.com/hydra-synth"></script> 
+  <script src="/background-hydra.js" defer></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/main2.js"></script>
+  <script src="assets/js/content-loader.js"></script>
+  <script>
+    $("#include-header").load("header.html");
+    $("#include-footer").load("footer.html", function() {
+      // Determine the initial language and update the quotes block
+      var initialLang = localStorage.getItem("currentLanguage") || "pt-BR";
+      if(initialLang === "en"){
+        selectEN(false);
+      } else {
+        selectPT(false);
+      }
+    });
+
+    // Get tag from URL parameter
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const tag = urlParams.get('tag') ? urlParams.get('tag').toLowerCase() : "";
+
+    // Set page title
+    document.querySelector('#titulo-tag').innerHTML = tag;
+    document.querySelector('#titulo-tag').insertAdjacentHTML('afterend', '<br>');
+
+    // Load content when page loads
+    $(document).ready(function() {
+      if (tag) {
+        loadContentByTag(tag, 'cards');
+      } else {
+        // Load all content if no tag specified
+        loadContentByTag('', 'cards');
+      }
+    });
+  </script>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-1979679-2"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'UA-1979679-2');
+  </script>
+
+</body>
+</html>
