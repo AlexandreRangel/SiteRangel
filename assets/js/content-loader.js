@@ -9,6 +9,29 @@ class ContentLoader {
   }
 
   /**
+   * Turn absolute alexandrerangel.art.br URLs into site-relative paths
+   * so cards work on GitHub Pages preview before DNS cutover.
+   * Leave youtube and other external hosts untouched.
+   */
+  resolveContentUrl(url) {
+    if (!url) return url;
+    try {
+      const u = new URL(url, window.location.href);
+      const host = u.hostname.replace(/^www\./, '');
+      if (host === 'alexandrerangel.art.br') {
+        // Drop leading slash so path stays relative to current folder
+        // (works for both custom domain root and /SiteRangel/ project pages).
+        const path = u.pathname.replace(/^\//, '');
+        return path + u.search + u.hash;
+      }
+    } catch (e) {
+      // relative or malformed — return as-is
+    }
+    return url;
+  }
+
+
+  /**
    * Load content entries filtered by tag
    * @param {Object} options - Configuration options
    * @param {string} options.tag - Tag to filter content by
@@ -78,7 +101,8 @@ class ContentLoader {
     for (let i = 0; i < pages.length; i++) {
       const page = pages[i];
       const tags = page.tags['#text'].toLowerCase();
-      const pageUrl = page.loc['#text'];
+      const pageUrlRaw = page.loc['#text'];
+      const pageUrl = this.resolveContentUrl(pageUrlRaw);
 
       // Check if page matches tag
       if (tags.includes(config.tag.toLowerCase())) {
@@ -136,7 +160,7 @@ class ContentLoader {
 
     // Image section
     const image = document.createElement("a");
-    image.href = page.loc['#text'];
+    image.href = this.resolveContentUrl(page.loc['#text']);
     image.className = "link-image";
 
     if (page.image['#text'].includes('hqdefault')) {
@@ -146,7 +170,7 @@ class ContentLoader {
     }
 
     const img = document.createElement("img");
-    img.src = page.image['#text'];
+    img.src = this.resolveContentUrl(page.image['#text']);
     img.className = "image";
     // Prefer bilingual alt from content.xml name fields; never leave empty for content images
     const namePt = page.name_pt && page.name_pt['#text'] ? page.name_pt['#text'] : '';
@@ -189,10 +213,10 @@ class ContentLoader {
     tags.className = "tags";
 
     // Set content
-    link_en.href = page.loc['#text'];
+    link_en.href = this.resolveContentUrl(page.loc['#text']);
     link_en.innerHTML = page.name_en['#text'];
 
-    link_pt_br.href = page.loc['#text'];
+    link_pt_br.href = this.resolveContentUrl(page.loc['#text']);
     link_pt_br.innerHTML = page.name_pt['#text'];
 
     text_en.innerHTML = page.text_en['#text'];
