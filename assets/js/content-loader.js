@@ -154,7 +154,7 @@ class ContentLoader {
     if (namePt && nameEn && namePt !== nameEn) {
       img.alt = `${namePt} / ${nameEn}`;
     } else {
-      img.alt = namePt || nameEn || 'Obra';
+      img.alt = namePt || nameEn || 'Obra / Artwork';
     }
 
     const icon = document.createElement("span");
