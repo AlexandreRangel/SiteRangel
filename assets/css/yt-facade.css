@@ -1,0 +1,67 @@
+/* Click-to-load YouTube facade — fills existing .player / .player-vertical boxes */
+
+.player .yt-facade,
+.player-vertical .yt-facade,
+.player1x1 .yt-facade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 9px;
+  overflow: hidden;
+  background: #111;
+}
+
+.yt-facade img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.yt-facade-play {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.yt-facade-icon {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 68px;
+  height: 48px;
+  margin: -24px 0 0 -34px;
+  background: #f00;
+  border-radius: 12px;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15);
+  transition: background 0.15s ease, transform 0.15s ease;
+}
+
+.yt-facade-icon::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -10px 0 0 -6px;
+  border-style: solid;
+  border-width: 10px 0 10px 18px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.yt-facade:hover .yt-facade-icon,
+.yt-facade-play:focus-visible .yt-facade-icon {
+  background: #f00;
+  transform: scale(1.08);
+}
+
+.yt-facade-play:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: -4px;
+}
