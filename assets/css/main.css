@@ -71,6 +71,12 @@ input, select, textarea {
 /* classes Rangel */
 /* //////////////////////////////////////////////////////////////////////////// */
 
+:root {
+	--card-capsule-bg: rgba(200, 200, 200, 0.25);
+	--card-capsule-radius: 10px;
+	--card-capsule-pad: 16px;
+}
+
 [lang="en"], [lang="pt-BR"] {
     display: none;
 }
@@ -134,6 +140,41 @@ input, select, textarea {
     width: 100%;
     height: 100%;
   }
+
+/* Shared gray capsule — same surface as catalog work cards */
+.text-capsule {
+	display: block;
+	width: 100%;
+	height: auto;
+	box-sizing: border-box;
+	border-radius: var(--card-capsule-radius);
+	background: var(--card-capsule-bg);
+	padding: var(--card-capsule-pad);
+	text-align: left;
+	overflow: hidden;
+}
+
+#main > .text-capsule,
+#hero > .text-capsule {
+	margin: 0 0 1.25em;
+}
+
+#hero > .text-capsule {
+	margin-top: 1em;
+}
+
+.row > [class*="col-"] > .text-capsule {
+	height: 100%;
+	min-height: 100%;
+}
+
+.text-capsule > :first-child {
+	margin-top: 0;
+}
+
+.text-capsule > :last-child {
+	margin-bottom: 0;
+}
 
 .player1x1 {
     /* overflow: hidden;
@@ -2582,14 +2623,98 @@ input, select, textarea {
 	
 /* Copyright */
 
+	#include-footer {
+		position: relative;
+		z-index: 2;
+	}
+
 	#copyright {
 		position: relative;
-		z-index: 1;
-		text-align: center;
+		z-index: 3;
+		text-align: left;
 		/* border-top: solid 1px #d2d7dc; */
 		color: #a2a7ac;
 		/* padding-top: 4em; */
 		margin-top: 1.5em;
+	}
+
+	#quotes-block,
+	.quotes-block {
+		position: relative;
+		z-index: 3;
+		text-align: left;
+		width: 100%;
+	}
+
+	.quotes-oracle,
+	#quotes-oracle {
+		display: block;
+		width: 100%;
+		max-width: 100%;
+		margin: 0;
+		padding: 0.4em 0 0.75em;
+		border: 0;
+		background: transparent;
+		box-sizing: border-box;
+		text-align: left;
+		font: 18px/32px Arial, Tahoma, sans-serif;
+		color: #d60865;
+		cursor: pointer;
+		position: relative;
+		z-index: 3;
+		appearance: none;
+		-webkit-appearance: none;
+	}
+
+	.quotes-oracle:focus,
+	#quotes-oracle:focus {
+		outline: 2px solid rgba(214, 8, 101, 0.45);
+		outline-offset: 4px;
+	}
+
+	.quotes-oracle-surface,
+	.quotes-oracle-text,
+	.quotes-oracle-author,
+	.quotes-oracle-icon,
+	.quotes-oracle-icon-img,
+	.quotes-oracle-icon-fallback {
+		pointer-events: none;
+	}
+
+	.quotes-oracle-surface {
+		display: block;
+		width: 100%;
+		text-align: left;
+	}
+
+	.quotes-oracle-text,
+	.quotes-oracle-author {
+		display: block;
+	}
+
+	.quotes-oracle-icon {
+		display: block;
+		width: 17px;
+		min-width: 17px;
+		height: 22px;
+		min-height: 22px;
+		margin-top: 0.35em;
+	}
+
+	.quotes-oracle-icon-img,
+	.quotes-oracle-icon-fallback {
+		width: 17px;
+		height: 22px;
+	}
+
+	.quotes-oracle-icon-img[hidden],
+	.quotes-oracle-icon-fallback[hidden] {
+		display: none;
+	}
+
+	.quotes-oracle-icon-img:not([hidden]),
+	.quotes-oracle-icon-fallback:not([hidden]) {
+		display: block;
 	}
 
 /* Normal */
@@ -2732,6 +2857,8 @@ input, select, textarea {
 
 			#copyright {
 				padding-top: 2em;
+				padding-left: 1.5em;
+				padding-right: 1.5em;
 				margin-top: 3em;
 			}
 
@@ -2910,6 +3037,11 @@ input, select, textarea {
 
 			#footer-wrapper {
 				padding: 3em 20px 3em 20px;
+			}
+
+			#copyright {
+				padding-left: 20px;
+				padding-right: 20px;
 			}
 
 		/* Header */
