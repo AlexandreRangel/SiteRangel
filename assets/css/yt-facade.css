@@ -38,8 +38,9 @@
   width: 68px;
   height: 48px;
   margin: -24px 0 0 -34px;
-  background: rgba(23, 23, 23, 0.8);
+  background: #f00;
   border-radius: 12px;
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.15);
   transition: background 0.15s ease, transform 0.15s ease;
 }
 
