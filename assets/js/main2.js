@@ -19,7 +19,36 @@ function selectEN(reload) {
     if (reload) location.reload();
 }
 
+/**
+ * Wrap bare video side-panels in the shared gray text-capsule
+ * used by catalog work cards (live-coding and similar pages).
+ */
+function wrapVideoTextCapsules() {
+    var rows = document.querySelectorAll(".row");
+    for (var i = 0; i < rows.length; i++) {
+        var row = rows[i];
+        if (row.closest("#footer2, #nav, #header, #header-wrapper")) continue;
+        if (!row.querySelector(".player, iframe[src*='youtube']")) continue;
+        var cols = row.children;
+        for (var j = 0; j < cols.length; j++) {
+            var col = cols[j];
+            if (!col.className || col.className.indexOf("col-") === -1) continue;
+            if (col.querySelector(".player, iframe[src*='youtube']")) continue;
+            if (col.querySelector(".text-capsule, .card")) continue;
+            var text = (col.textContent || "").replace(/\s+/g, " ").trim();
+            if (!text) continue;
+            var wrap = document.createElement("div");
+            wrap.className = "text-capsule";
+            while (col.firstChild) {
+                wrap.appendChild(col.firstChild);
+            }
+            col.appendChild(wrap);
+        }
+    }
+}
+
 $(document).ready(function() {
+    wrapVideoTextCapsules();
     var $window = $(window),
         $body = $("body");
 

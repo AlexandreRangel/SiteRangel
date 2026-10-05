@@ -22,8 +22,8 @@ section#cards .card,
   height: var(--cardHeight);
   margin: var(--cardMargin);
   margin-bottom: 1.5em !important;
-  border-radius: 10px;
-  background: rgba(200, 200, 200, 0.25);
+  border-radius: var(--card-capsule-radius, 10px);
+  background: var(--card-capsule-bg, rgba(200, 200, 200, 0.25));
   box-sizing: border-box;
   display: flex !important;
   flex-direction: row !important;
@@ -46,7 +46,7 @@ section#cards .card__col-1,
 #dynamic-content .card__col-2,
 section#cards .card__col-2,
 #objkt-featured .cards .card__col-2 {
-  padding: 16px;
+  padding: var(--card-capsule-pad, 16px);
   flex: 3 0 0% !important;
   display: flex !important;
   flex-direction: column !important;
