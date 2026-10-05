@@ -1,8 +1,8 @@
 /* Scoped Content Cards Styles for Dynamic Content Loader */
 
-#dynamic-content :root,
-section#cards :root,
-#objkt-featured :root {
+#dynamic-content,
+section#cards,
+#objkt-featured {
   --cardWidth: 100%;
   --cardHeight: content;
   --cardMargin: 32px 0 0 0;
@@ -18,7 +18,9 @@ section#cards .cards,
 #dynamic-content .card,
 section#cards .card,
 #objkt-featured .cards .card {
-  width: var(--cardWidth);
+  width: 100%;
+  max-width: 100%;
+  flex: 1 0 100%;
   height: var(--cardHeight);
   margin: var(--cardMargin);
   margin-bottom: 1.5em !important;
