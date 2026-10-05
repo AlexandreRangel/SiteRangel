@@ -143,6 +143,25 @@ section#cards .overlay,
   }
 }
 
+#dynamic-content .card--text {
+  margin-top: 0;
+}
+
+#dynamic-content .card--text .card__col-2 {
+  flex: 1 1 100% !important;
+}
+
+#dynamic-content .card .player {
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  width: 100%;
+}
+
+#dynamic-content .card .player iframe {
+  border-radius: 9px;
+}
+
 @media (max-width: 768px) {
   #dynamic-content .card,
   section#cards .card,
@@ -152,7 +171,8 @@ section#cards .overlay,
 
   #dynamic-content .image,
   section#cards .image,
-  #objkt-featured .cards .image {
+  #objkt-featured .cards .image,
+  #dynamic-content .card .player iframe {
     border-radius: 9px 9px 0px 0px;
   }
 }
