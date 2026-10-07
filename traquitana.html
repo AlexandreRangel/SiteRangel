@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Alexandre Rangel : Arte digital, Arte generativa, Cursos, Consultoria, Cursos de Programação Criativa, Cursos de programação para crianças, Música Experimental, NFT</title>
 <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/yt-facade.css" />
 <script src='/google_analytics_auto.js'></script></head>
 
 <body class="no-sidebar is-preload">
@@ -35,7 +36,12 @@
 <div class="row"> <!-- video -->
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/kywaUkM9SJA?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="kywaUkM9SJA" data-yt-title="Traquitana Visual Interativa">
+          <img src="imagens/posters/kywaUkM9SJA.jpg" width="1280" height="720" alt="Traquitana Visual Interativa">
+          <button type="button" class="yt-facade-play" aria-label="Play Traquitana Visual Interativa">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -66,6 +72,7 @@
 <script src="background-hydra.js" defer></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main2.js"></script>
+<script src="assets/js/yt-facade.js"></script>
 <script>
   $("#include-header").load("header.html");
   $("#include-footer").load("footer.html");

@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Alexandre Rangel : Arte digital, Arte generativa, Cursos, Consultoria, Cursos de Programação Criativa, Cursos de programação para crianças, Música Experimental, VJ, VJ Xorume, Video Mapping, Inteligência Artificial</title>
 <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/yt-facade.css" />
 <script src='/google_analytics_auto.js'></script></head>
 
 <body class="no-sidebar is-preload">
@@ -121,7 +122,12 @@ I perform under the pseudonym vj Xorume.<br></span>
 <div class="row"> <!-- vj Xorume -->
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/JSb4u62wZZs?rel=0" width="480" height="320" frameborder="0" allowfullscreen=""></iframe>
+        <div class="yt-facade" data-yt-id="JSb4u62wZZs" data-yt-title="vj Xorume">
+          <img src="imagens/posters/JSb4u62wZZs.jpg" width="1280" height="720" alt="vj Xorume">
+          <button type="button" class="yt-facade-play" aria-label="Play vj Xorume">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -421,6 +427,7 @@ I perform under the pseudonym vj Xorume.<br></span>
 <script src="background-hydra.js" defer></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main2.js"></script>
+<script src="assets/js/yt-facade.js"></script>
 <script>
   $("#include-header").load("header.html");
   $("#include-footer").load("footer.html");

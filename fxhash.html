@@ -5,6 +5,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/yt-facade.css" />
 <script src='/google_analytics_auto.js'></script></head>
 
 <body class="no-sidebar is-preload">
@@ -45,7 +46,12 @@
 <div class="row"> <!-- vídeo fx(hash) -->
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/M43tV3I2dPY?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="M43tV3I2dPY" data-yt-title="fx(hash) : Arte generativa na blockchain Tezos">
+          <img src="imagens/posters/M43tV3I2dPY.jpg" width="1280" height="720" alt="fx(hash) : Arte generativa na blockchain Tezos">
+          <button type="button" class="yt-facade-play" aria-label="Play fx(hash) : Arte generativa na blockchain Tezos">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -69,7 +75,12 @@
 <div class="row"> <!-- generative art NFT-->
   <div class="col-6 col-12-narrower">
     <div class="player1x1">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/LSLxTHMmABI?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="LSLxTHMmABI" data-yt-title="Alien DNA">
+          <img src="imagens/posters/LSLxTHMmABI.jpg" width="1280" height="720" alt="Alien DNA">
+          <button type="button" class="yt-facade-play" aria-label="Play Alien DNA">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -95,7 +106,12 @@
 <div class="row"> <!-- video mapping-->
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/pQ3AhJDvQfA?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="pQ3AhJDvQfA" data-yt-title="hash eggs">
+          <img src="imagens/posters/pQ3AhJDvQfA.jpg" width="1280" height="720" alt="hash eggs">
+          <button type="button" class="yt-facade-play" aria-label="Play hash eggs">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -169,7 +185,12 @@
 <div class="row"> <!-- video mapping-->
   <div class="col-6 col-12-narrower">
     <div class="player1x1">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/VIrUSYWyIZ0?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="VIrUSYWyIZ0" data-yt-title="phantom masks">
+          <img src="imagens/posters/VIrUSYWyIZ0.jpg" width="1280" height="720" alt="phantom masks">
+          <button type="button" class="yt-facade-play" aria-label="Play phantom masks">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -256,6 +277,7 @@
 <script src="background-hydra.js" defer></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main2.js"></script>
+<script src="assets/js/yt-facade.js"></script>
 <script>
   $("#include-header").load("header.html");
   $("#include-footer").load("footer.html");
