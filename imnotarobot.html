@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Alexandre Rangel : Arte digital, Arte generativa, Cursos, Consultoria, Cursos de Programação Criativa, Cursos de programação para crianças, NFT</title>
 <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/yt-facade.css" />
 <script src='/google_analytics_auto.js'></script></head>
 
 <body class="no-sidebar is-preload">
@@ -34,7 +35,12 @@
 <div class="row"> <!-- video Artificial Intelligence Art -->
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/K88AwswGEOk?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="K88AwswGEOk" data-yt-title="EYE Genesis">
+          <img src="imagens/posters/K88AwswGEOk.jpg" width="1280" height="720" alt="EYE Genesis">
+          <button type="button" class="yt-facade-play" aria-label="Play EYE Genesis">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -104,6 +110,7 @@ Mint your exclusive NFT at: <span class="emoji">✨</span>&nbsp;&nbsp;<a href="h
 <script src="background-hydra.js" defer></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main2.js"></script>
+<script src="assets/js/yt-facade.js"></script>
 <script>
   $("#include-header").load("header.html");
   $("#include-footer").load("footer.html");

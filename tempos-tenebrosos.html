@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Alexandre Rangel : Arte digital, Arte generativa, Cursos, Consultoria, Cursos de Programação Criativa, Cursos de programação para crianças, Música Experimental, Inteligência Artificial</title>
 <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/yt-facade.css" />
 <script src='/google_analytics_auto.js'></script></head>
 
 <body class="no-sidebar is-preload">
@@ -41,7 +42,12 @@
 <div class="row">
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/SUmKJh4TjMk?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="SUmKJh4TjMk" data-yt-title="tempos tenebrosos">
+          <img src="imagens/posters/SUmKJh4TjMk.jpg" width="1280" height="720" alt="tempos tenebrosos">
+          <button type="button" class="yt-facade-play" aria-label="Play tempos tenebrosos">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div lang="pt-BR" class="col-6 col-12-narrower">
@@ -69,6 +75,7 @@
 <script src="background-hydra.js" defer></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main2.js"></script>
+<script src="assets/js/yt-facade.js"></script>
 <script>
   $("#include-header").load("header.html");
   $("#include-footer").load("footer.html");

@@ -5,6 +5,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/yt-facade.css" />
 <script src='/google_analytics_auto.js'></script></head>
 
 <body class="no-sidebar is-preload">
@@ -33,7 +34,12 @@
 <div class="row"> <!-- video Artificial Intelligence Art -->
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/DjFfnYN_G30?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="DjFfnYN_G30" data-yt-title="Robot Genesis">
+          <img src="imagens/posters/DjFfnYN_G30.jpg" width="1280" height="720" alt="Robot Genesis">
+          <button type="button" class="yt-facade-play" aria-label="Play Robot Genesis">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -55,7 +61,12 @@
 <div class="row"> <!-- video Artificial Intelligence Art Remix -->
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/IBtjnpKLa-c?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="IBtjnpKLa-c" data-yt-title="Remix LAB prototype unit">
+          <img src="imagens/posters/IBtjnpKLa-c.jpg" width="1280" height="720" alt="Remix LAB prototype unit">
+          <button type="button" class="yt-facade-play" aria-label="Play Remix LAB prototype unit">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -84,6 +95,7 @@
 <script src="background-hydra.js" defer></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main2.js"></script>
+<script src="assets/js/yt-facade.js"></script>
 <script>
   $("#include-header").load("header.html");
   $("#include-footer").load("footer.html");

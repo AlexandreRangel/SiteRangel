@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 <title>Alexandre Rangel : Arte digital, Arte generativa, Cursos, Consultoria, Cursos de Programação Criativa, Cursos de programação para crianças</title>
 <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/yt-facade.css" />
 <script src='/google_analytics_auto.js'></script></head>
 
 <body class="no-sidebar is-preload">
@@ -40,7 +41,12 @@
 <div class="row"> <!-- pesadelo colonial -->
   <div class="col-12 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/j7N4viyOPbw?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="j7N4viyOPbw" data-yt-title="Pesadelo Colonial">
+          <img src="imagens/posters/j7N4viyOPbw.jpg" width="1280" height="720" alt="Pesadelo Colonial">
+          <button type="button" class="yt-facade-play" aria-label="Play Pesadelo Colonial">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
 </div>
@@ -131,6 +137,7 @@
 <script src="background-hydra.js" defer></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main2.js"></script>
+<script src="assets/js/yt-facade.js"></script>
 <script>
   $("#include-header").load("header.html");
   $("#include-footer").load("footer.html");

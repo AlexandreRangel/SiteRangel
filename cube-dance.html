@@ -5,6 +5,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/yt-facade.css" />
 <script src='/google_analytics_auto.js'></script></head>
 
 <body class="no-sidebar is-preload">
@@ -51,7 +52,12 @@
 <div class="row">
   <div class="col-6 col-12-narrower">
     <div class="player">
-      <iframe class="embed-responsive-item" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/gbwx-8co25w?rel=0"></iframe>
+      <div class="yt-facade" data-yt-id="gbwx-8co25w" data-yt-title="Cubos em Dança">
+        <img src="imagens/posters/gbwx-8co25w.jpg" width="1280" height="720" alt="Cubos em Dança">
+        <button type="button" class="yt-facade-play" aria-label="Play Cubos em Dança">
+          <span class="yt-facade-icon" aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -68,7 +74,12 @@
 <div class="row">
   <div class="col-6 col-12-narrower">
     <div class="player">
-      <iframe class="embed-responsive-item" frameborder="0" allowfullscreen allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/1s9lJ3J1itY?rel=0"></iframe>
+      <div class="yt-facade" data-yt-id="1s9lJ3J1itY" data-yt-title="Cubos em Dança">
+        <img src="imagens/posters/1s9lJ3J1itY.jpg" width="1280" height="720" alt="Cubos em Dança">
+        <button type="button" class="yt-facade-play" aria-label="Play Cubos em Dança">
+          <span class="yt-facade-icon" aria-hidden="true"></span>
+        </button>
+      </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -93,6 +104,7 @@
 <script src="background-hydra.js" defer></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main2.js"></script>
+<script src="assets/js/yt-facade.js"></script>
 <script>
   $("#include-header").load("header.html");
   $("#include-footer").load("footer.html");

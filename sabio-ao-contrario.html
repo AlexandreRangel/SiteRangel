@@ -6,6 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Alexandre Rangel : Arte digital, Arte generativa, Cursos, Consultoria, Cursos de Programação Criativa, Cursos de programação para crianças, Música Experimental</title>
 <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/yt-facade.css" />
 <script src='/google_analytics_auto.js'></script></head>
 
 <body class="no-sidebar is-preload">
@@ -40,7 +41,12 @@
 <div class="row"> <!-- video Sonic Pi -->
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/mTebABcWL5U?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="mTebABcWL5U" data-yt-title="Museu Nacional da República">
+          <img src="imagens/posters/mTebABcWL5U.jpg" width="1280" height="720" alt="Museu Nacional da República">
+          <button type="button" class="yt-facade-play" aria-label="Play Museu Nacional da República">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -88,7 +94,12 @@
 <div class="row"> <!-- video Sonic Pi -->
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/RhAr-H2t5dI?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="RhAr-H2t5dI" data-yt-title="Festival Sesc de Inverno">
+          <img src="imagens/posters/RhAr-H2t5dI.jpg" width="1280" height="720" alt="Festival Sesc de Inverno">
+          <button type="button" class="yt-facade-play" aria-label="Play Festival Sesc de Inverno">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -121,6 +132,7 @@
 <script src="background-hydra.js" defer></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main2.js"></script>
+<script src="assets/js/yt-facade.js"></script>
 <script>
   $("#include-header").load("header.html");
   $("#include-footer").load("footer.html");

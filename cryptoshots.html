@@ -5,6 +5,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/yt-facade.css" />
 <script src='/google_analytics_auto.js'></script></head>
 
 <body class="no-sidebar is-preload">
@@ -35,7 +36,12 @@
 <div class="row"> <!-- hash eggs -->
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/tDuYCdAyJqM?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="tDuYCdAyJqM" data-yt-title="Cryptoshots">
+          <img src="imagens/posters/tDuYCdAyJqM.jpg" width="1280" height="720" alt="Cryptoshots">
+          <button type="button" class="yt-facade-play" aria-label="Play Cryptoshots">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -64,7 +70,12 @@
 <div class="row"> <!-- hash eggs -->
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/fB_9EdDQrZ4?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="fB_9EdDQrZ4" data-yt-title="NFT interativo &#x27;Tezos Dynamic Portrait&#x27;">
+          <img src="imagens/posters/fB_9EdDQrZ4.jpg" width="1280" height="720" alt="NFT interativo &#x27;Tezos Dynamic Portrait&#x27;">
+          <button type="button" class="yt-facade-play" aria-label="Play NFT interativo &#x27;Tezos Dynamic Portrait&#x27;">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -147,6 +158,7 @@
 <script src="background-hydra.js" defer></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main2.js"></script>
+<script src="assets/js/yt-facade.js"></script>
 <script>
   $("#include-header").load("header.html");
   $("#include-footer").load("footer.html");

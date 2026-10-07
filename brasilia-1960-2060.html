@@ -5,6 +5,7 @@
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <link rel="stylesheet" href="assets/css/main.css" />
+<link rel="stylesheet" href="assets/css/yt-facade.css" />
 <script src='/google_analytics_auto.js'></script></head>
 
 <body class="no-sidebar is-preload">
@@ -39,7 +40,12 @@
 <div class="row"> <!-- video Brasília -->
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/uXvInpRB0YU?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="uXvInpRB0YU" data-yt-title="Brasília 1960, 2160">
+          <img src="imagens/posters/uXvInpRB0YU.jpg" width="1280" height="720" alt="Brasília 1960, 2160">
+          <button type="button" class="yt-facade-play" aria-label="Play Brasília 1960, 2160">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -65,7 +71,12 @@
 <div class="row"> <!-- video Brasília -->
   <div class="col-6 col-12-narrower">
     <div class="player">
-        <iframe frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" src="https://www.youtube-nocookie.com/embed/kt6ictHYyNg?rel=0"></iframe>
+        <div class="yt-facade" data-yt-id="kt6ictHYyNg" data-yt-title="Brasília 1960, 2160">
+          <img src="imagens/posters/kt6ictHYyNg.jpg" width="1280" height="720" alt="Brasília 1960, 2160">
+          <button type="button" class="yt-facade-play" aria-label="Play Brasília 1960, 2160">
+            <span class="yt-facade-icon" aria-hidden="true"></span>
+          </button>
+        </div>
     </div>
   </div>
   <div class="col-6 col-12-narrower">
@@ -96,6 +107,7 @@
 <script src="background-hydra.js" defer></script>
 <script src="assets/js/util.js"></script>
 <script src="assets/js/main2.js"></script>
+<script src="assets/js/yt-facade.js"></script>
 <script>
   $("#include-header").load("header.html");
   $("#include-footer").load("footer.html");
