@@ -161,6 +161,7 @@ input, select, textarea {
 
 #hero > .text-capsule {
 	margin-top: 1em;
+	text-align: center;
 }
 
 .row > [class*="col-"] > .text-capsule {
