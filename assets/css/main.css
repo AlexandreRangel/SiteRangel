@@ -2378,12 +2378,18 @@ input, select, textarea {
 	}
 
 		#nav > ul {
+			display: flex;
+			align-items: center;
+			flex-wrap: nowrap;
+			width: 100%;
 			margin: 0;
-            padding: 0;
+            padding: 0 0.75em;
+			box-sizing: border-box;
 		}
 
 			#nav > ul > li {
 				display: inline-block;
+				flex: 0 0 auto;
 				margin-left: 0;
                 padding-left: 0;
 			}
@@ -2418,7 +2424,10 @@ input, select, textarea {
 				}
 
 				#nav > ul > li.break {
-					margin-left: 20em;
+					flex: 1 0 18em;
+					min-width: 18em;
+					margin-left: 0;
+					pointer-events: none;
 				}
 
 	.dropotron {
@@ -2838,6 +2847,8 @@ input, select, textarea {
 
 					#nav > ul > li.break {
 						margin-left: 0;
+						flex: 1 0 18em;
+						min-width: 18em;
 					}
 
 			.dropotron.level-0 {
@@ -3086,6 +3097,11 @@ input, select, textarea {
 
 		#nav > ul > li > span, #nav > ul > li > a {
 			padding: 0.25em 0.5em 0.25em 0.5em;
+		}
+
+		#nav > ul > li.break {
+			flex: 1 1 0.5em;
+			min-width: 0.5em;
 		}
 
 		/* Footer */
