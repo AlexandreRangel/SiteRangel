@@ -177,6 +177,18 @@ input, select, textarea {
 	margin-bottom: 0;
 }
 
+.text-capsule p {
+	line-height: 1.5em;
+}
+
+.text-capsule p + p {
+	margin-top: 0.85em;
+}
+
+.text-capsule h3 {
+	margin-bottom: 0.6em;
+}
+
 .player1x1 {
     /* overflow: hidden;
     z-index: 1;
@@ -2280,6 +2292,24 @@ input, select, textarea {
 .image-wrapper img:hover {
 	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
 }
+
+	.hashtag-menu a {
+		display: inline-block;
+		margin: 0 0.55em 0.2em 0;
+	}
+
+	.hashtag-menu a.work-page-nav {
+		white-space: nowrap;
+	}
+
+	.work-page-icon {
+		display: inline-block;
+		margin-right: 0.28em;
+		font-size: 0.65em;
+		opacity: 0.7;
+		vertical-align: 0.12em;
+		letter-spacing: 0;
+	}
 
 	#header-wrapper {
 		position: relative;
