@@ -6,6 +6,7 @@ function selectPT(reload) {
     $('.flag-pt').addClass('flag-active');
     localStorage.setItem("currentLanguage", "pt-BR");
     if (typeof window.updateQuotesBlock === 'function') window.updateQuotesBlock('pt');
+    renderHashtagMenu();
     if (reload) location.reload();
 }
 function selectEN(reload) {
@@ -16,7 +17,100 @@ function selectEN(reload) {
     $('.flag-en').addClass('flag-active');
     localStorage.setItem("currentLanguage", "en");
     if (typeof window.updateQuotesBlock === 'function') window.updateQuotesBlock('en');
+    renderHashtagMenu();
     if (reload) location.reload();
+}
+
+/** Dedicated work pages mixed into the top hashtag bar (content.xml locs). */
+var WORK_PAGE_NAV = [
+    { href: "earth-affection.html", labelPt: "Earth Affection", labelEn: "Earth Affection" },
+    { href: "esculturas-quanticas.html", labelPt: "Esculturas Quânticas", labelEn: "Quantum Sculptures" },
+    { href: "pesadelo-colonial.html", labelPt: "Pesadelo Colonial", labelEn: "Colonial Nightmare" }
+];
+var hashtagFilterSnapshot = null;
+
+/** True when the active site language is English (?lang=en or stored en). */
+function isSiteEnglish() {
+    var htmlLang = document.documentElement.lang;
+    if (htmlLang === "en") return true;
+    if (htmlLang === "pt-BR") return false;
+    var queryLang = new URLSearchParams(window.location.search).get("lang");
+    if (queryLang) return queryLang.toLowerCase() === "en";
+    return localStorage.getItem("currentLanguage") === "en";
+}
+
+/** Sort key for hashtags and work-page labels, ignoring a leading '#' or '>'. */
+function hashtagSortKey(label) {
+    return String(label || "").replace(/^[#>]*/, "").trim();
+}
+
+/** Keep the original hashtag links so rebuilds do not change filter behavior. */
+function snapshotHashtagFilters(menu) {
+    if (hashtagFilterSnapshot) return hashtagFilterSnapshot;
+    var items = [];
+    var links = menu.querySelectorAll("a");
+    for (var i = 0; i < links.length; i++) {
+        var link = links[i];
+        if (link.classList.contains("work-page-nav")) continue;
+        items.push({
+            href: link.getAttribute("href"),
+            label: (link.textContent || "").replace(/\s+/g, " ").trim()
+        });
+    }
+    hashtagFilterSnapshot = items;
+    return items;
+}
+
+/** Merge work-page entries with hashtags, sort A-Z by current language, and render. */
+function renderHashtagMenu() {
+    var menu = document.querySelector(".hashtag-menu");
+    if (!menu || !menu.querySelector("a")) return;
+    var isEnglish = isSiteEnglish();
+    var locale = isEnglish ? "en" : "pt";
+    var items = snapshotHashtagFilters(menu).map(function (item) {
+        return { href: item.href, label: item.label, isWorkPage: false };
+    });
+    for (var i = 0; i < WORK_PAGE_NAV.length; i++) {
+        var work = WORK_PAGE_NAV[i];
+        items.push({
+            href: isEnglish ? work.href + "?lang=en" : work.href,
+            label: isEnglish ? work.labelEn : work.labelPt,
+            isWorkPage: true
+        });
+    }
+    items.sort(function (a, b) {
+        return hashtagSortKey(a.label).localeCompare(hashtagSortKey(b.label), locale, { sensitivity: "base" });
+    });
+    menu.textContent = "";
+    for (var j = 0; j < items.length; j++) {
+        var item = items[j];
+        var anchor = document.createElement("a");
+        anchor.href = item.href;
+        if (item.isWorkPage) {
+            anchor.className = "work-page-nav";
+            anchor.textContent = ">" + item.label;
+        } else {
+            anchor.textContent = item.label;
+        }
+        menu.appendChild(anchor);
+    }
+}
+
+/** Render the hashtag bar once header.html has been injected. */
+function initHashtagMenu() {
+    if (document.querySelector(".hashtag-menu a")) {
+        renderHashtagMenu();
+        return;
+    }
+    var host = document.getElementById("include-header");
+    if (!host) return;
+    var observer = new MutationObserver(function () {
+        if (document.querySelector(".hashtag-menu a")) {
+            observer.disconnect();
+            renderHashtagMenu();
+        }
+    });
+    observer.observe(host, { childList: true, subtree: true });
 }
 
 var CAPSULE_SKIP = "#footer2, #include-footer, #nav, #header, #header-wrapper, #copyright, #quotes-block, #quotes-oracle";
@@ -182,6 +276,7 @@ function wrapSiteTextCapsules() {
 }
 
 $(document).ready(function() {
+    initHashtagMenu();
     wrapSiteTextCapsules();
     var $window = $(window),
         $body = $("body");
