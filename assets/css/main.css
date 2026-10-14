@@ -3355,3 +3355,10 @@ span.emoji {
 #footer2 ul li a:hover .icon::before {
 	color: #f35858;
 }
+/* Aquamarine titles (#7cf2b0), matching tech.html */
+.feature > .player + p::first-line,
+.feature > .player + .text-capsule > p::first-line { color: #7cf2b0; font-size: 1.2em; font-weight: 600; }
+#main:not(.tech-page) > h2,
+#main:not(.tech-page) > .text-capsule > h2 { color: #7cf2b0; }
+#main > h2 + i, #main > h2 + h2 + i,
+#main > .text-capsule > h2 + i, #main > .text-capsule > h2 + h2 + i { display: inline-block; border-left: 3px solid #7cf2b0; padding-left: .8em; }
