@@ -15,6 +15,11 @@
 .tech-img{margin:0;background:#000;border-radius:4px;overflow:hidden;aspect-ratio:16/10;position:sticky;top:1em}
 .tech-img img{width:100%;height:100%;object-fit:cover;display:block}
 .tech-img img[lang]{display:none}
+.tech-imgs{display:flex;flex-direction:column;gap:1.4em;position:sticky;top:1em}
+.tech-fig{margin:0}
+.tech-fig .tech-img{display:block;position:static}
+.tech-fig figcaption{font-size:.82em;opacity:.8;margin-top:.45em;line-height:1.35}
+.tech-fig figcaption a{border-bottom:none}
 .tech-h{color:var(--tech-acc);font-size:1.45em;font-weight:600;margin:0 0 .6em;line-height:1.25}
 .tech-txt p{margin:0 0 1em;text-align:left}
 .tech-tec{font-size:.92em;border-left:3px solid var(--tech-acc);padding-left:.8em}
@@ -30,7 +35,8 @@
 .tech-arrow{display:inline-block;margin-left:.5em;transition:transform .25s}
 .tech-more-btn[aria-expanded="true"] .tech-arrow{transform:rotate(180deg)}
 .tech-draft{font-size:.8em;color:#ffcf6e}
-@media (max-width:820px){.tech-row{grid-template-columns:1fr;gap:1.2em}.tech-row.tech-rev .tech-img{order:0}.tech-img{position:static}}
+.tech-row.tech-rev .tech-imgs{order:2}
+@media (max-width:820px){.tech-imgs{position:static}.tech-row.tech-rev .tech-imgs{order:0}.tech-row{grid-template-columns:1fr;gap:1.2em}.tech-row.tech-rev .tech-img{order:0}.tech-img{position:static}}
 </style></head>
 
 <body class="no-sidebar is-preload">
@@ -48,7 +54,7 @@
 
 
 <section class="tech-row" id="metodologia">
-  <figure class="tech-img"><img src="imagens/tech-img/yt-j-8_0ztIWhc.jpg" lang="pt-BR" alt="Sonhos Molhados de Gaia, do coletivo Earth Affection, projetado na cúpula do Museu Nacional da República, em Brasília, à noite." loading="lazy"><img src="imagens/tech-img/yt-j-8_0ztIWhc.jpg" lang="en" alt="Gaia Wet Dreams, by the Earth Affection collective, projected on the dome of the National Museum of the Republic in Brasília at night." loading="lazy"></figure>
+  <div class="tech-imgs"><figure class="tech-fig"><a class="tech-img" href="https://www.youtube.com/watch?v=j-8_0ztIWhc" target="_blank" rel="noopener"><img src="imagens/tech-img/yt-j-8_0ztIWhc.jpg" lang="pt-BR" alt="Sonhos Molhados de Gaia, do coletivo Earth Affection, projetado na cúpula do Museu Nacional da República, em Brasília, à noite." loading="lazy"><img src="imagens/tech-img/yt-j-8_0ztIWhc.jpg" lang="en" alt="Gaia Wet Dreams, by the Earth Affection collective, projected on the dome of the National Museum of the Republic in Brasília at night." loading="lazy"></a><figcaption><span lang="pt-BR"><a href="https://www.youtube.com/watch?v=j-8_0ztIWhc" target="_blank" rel="noopener">&#9654; Sonhos Molhados de Gaia (Earth Affection), cúpula do Museu Nacional da República, Festival Eixo do Fora, 2026</a></span><span lang="en"><a href="https://www.youtube.com/watch?v=j-8_0ztIWhc" target="_blank" rel="noopener">&#9654; Gaia Wet Dreams (Earth Affection), dome of the National Museum of the Republic, Eixo do Fora Festival, 2026</a></span></figcaption></figure><figure class="tech-fig"><a class="tech-img" href="https://www.youtube.com/watch?v=sjxQebZz0ok" target="_blank" rel="noopener"><img src="imagens/tech-img/yt-sjxQebZz0ok.jpg" lang="pt-BR" alt="Slicing Sonic Thoughts on a Turing Machine: código de Sonic Pi ao lado de um patch visual com nós conectados e formas de onda." loading="lazy"><img src="imagens/tech-img/yt-sjxQebZz0ok.jpg" lang="en" alt="Slicing Sonic Thoughts on a Turing Machine: Sonic Pi code next to a visual patch of connected nodes and waveforms." loading="lazy"></a><figcaption><span lang="pt-BR"><a href="https://www.youtube.com/watch?v=sjxQebZz0ok" target="_blank" rel="noopener">&#9654; Slicing Sonic Thoughts on a Turing Machine: Sonic Pi, SunVox, VDMX e Blender conectados ao vivo</a></span><span lang="en"><a href="https://www.youtube.com/watch?v=sjxQebZz0ok" target="_blank" rel="noopener">&#9654; Slicing Sonic Thoughts on a Turing Machine: Sonic Pi, SunVox, VDMX and Blender connected live</a></span></figcaption></figure></div>
   <div class="tech-txt">
     <div lang="pt-BR"><h3 class="tech-h">Metodologia e Tecnologias</h3><p>Alexandre Rangel é artista multimídia, pesquisador e desenvolvedor de software brasiliense, Doutor em Arte e Tecnologia (UnB, 2019). Seu método começa pela subversão da função original do software: programas são desviados daquilo para que foram feitos e conectados de maneiras inesperadas, de modo que uma imagem analisada em Processing toca o ORCA, o sinal elétrico de uma planta conduz o Ableton Live e o código escrito ao vivo em Sonic Pi, Strudel ou Hydra divide a cena com o Blender e com aplicativos que ele mesmo programa. A produção artística é o centro dessa prática: as <a href="#esculturas-quanticas">Esculturas Quânticas</a> interativas na fachada de LED da Fiesp, em São Paulo; os corpos e as projeções organicamente mapeadas do coletivo <a href="#earth-affection">Earth Affection</a> no Museu Nacional da República; as plantas que compõem música em <a href="#eco-sistemas">eco-sistemas</a>; e a pesquisa com inteligência artificial em obras como <a href="#pesquisa-ia">Sopa Primordial</a>, exibida nos CCBBs do Rio de Janeiro e de São Paulo. Desde os anos 1990, e de forma contínua desde o início dos anos 2000, Alexandre também desenvolve software criativo para a própria expressão e para a de outras pessoas, sobretudo o <a href="#quase-cinema">Quase-Cinema</a>, software livre de cinema ao vivo levado a oficinas no Brasil, na Dinamarca e em Taiwan.</p>
       <div class="tech-videos"><span class="tech-label">Vídeos:</span><ul><li><a href="https://www.youtube.com/watch?v=sjxQebZz0ok" target="_blank" rel="noopener">&#9654; Slicing Sonic Thoughts on a Turing Machine (Sonic Pi, SunVox, VDMX, Blender)</a></li></ul></div>
