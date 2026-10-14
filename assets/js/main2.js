@@ -39,9 +39,9 @@ function isSiteEnglish() {
     return localStorage.getItem("currentLanguage") === "en";
 }
 
-/** Sort key for hashtags and work-page labels, ignoring a leading '#'. */
+/** Sort key for hashtags and work-page labels, ignoring a leading '#' or '>'. */
 function hashtagSortKey(label) {
-    return String(label || "").replace(/^#/, "").trim();
+    return String(label || "").replace(/^[#>]*/, "").trim();
 }
 
 /** Keep the original hashtag links so rebuilds do not change filter behavior. */
@@ -88,12 +88,7 @@ function renderHashtagMenu() {
         anchor.href = item.href;
         if (item.isWorkPage) {
             anchor.className = "work-page-nav";
-            var icon = document.createElement("span");
-            icon.className = "work-page-icon";
-            icon.setAttribute("aria-hidden", "true");
-            icon.textContent = "\u25C6";
-            anchor.appendChild(icon);
-            anchor.appendChild(document.createTextNode(item.label));
+            anchor.textContent = ">" + item.label;
         } else {
             anchor.textContent = item.label;
         }
