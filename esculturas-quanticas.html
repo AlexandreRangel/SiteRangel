@@ -7,9 +7,29 @@
 <title>Alexandre Rangel : Arte digital, Arte generativa, Cursos, Consultoria, Cursos de Programação Criativa, Cursos de programação para crianças</title>
 <link rel="stylesheet" href="assets/css/main.css" />
 <link rel="stylesheet" href="assets/css/yt-facade.css" />
+<style>
+/* This page only: match description + method type; tighter method paragraphs */
+.eq-page .text-capsule p,
+.eq-page .text-capsule h5 {
+	font-size: 1em;
+	font-weight: 300;
+	color: #ddd;
+	line-height: 1.75em;
+}
+.eq-page .eq-method p + p {
+	margin-top: 0.425em;
+}
+.eq-page .eq-method-title {
+	font-size: 0.95em;
+	font-weight: 400;
+	color: #ddd;
+	line-height: 1.5em;
+	margin: 0 0 0.35em;
+}
+</style>
 <script src='/google_analytics_auto.js'></script></head>
 
-<body class="no-sidebar is-preload">
+<body class="no-sidebar is-preload eq-page">
 	<div id="page-wrapper">
 	<canvas id="rangel_background"></canvas>
 	<div id="include-header"></div>
@@ -30,19 +50,6 @@
 <i>Alexandre Rangel</i>
 <br><br>
 
-<div class="text-capsule">
-  <div lang="pt-BR">
-    <p>Sobre o conceito e a metodologia desta obra: Esculturas Quânticas é uma programação computacional que se inspira na possibilidade quântica de ligação entre partículas distantes. Aqui, essa ligação é a metáfora da conexão entre o espectador e a obra, ou seja, o algoritmo que gera continuamente formas únicas. Dependendo da hora e do dia em que alguém vê a obra, acontece um encontro diferente com ela.</p>
-    <p>Por ser uma obra computacional rodando em tempo real, ela tem uma série de variáveis animadas como ondas senoidais desalinhadas, com frequências, tamanhos e amplitudes diferentes. Para que uma mesma configuração dessas variáveis, que geram a geometria, se repita, seriam necessárias centenas ou até milhares de anos de execução do programa. Por isso cada momento de encontro é único, e cada pessoa tem um encontro muito pessoal com a obra. Daí vem o conceito de escultura quântica.</p>
-    <p>Tecnicamente, a obra foi realizada primeiro no ambiente interativo do Blender 3D, com conexões em Python e OSC. A versão mais recente foi desenvolvida no <a href="https://cables.gl">cables.gl</a>, um sistema de programação visual baseado em nós e JavaScript.</p>
-  </div>
-  <div lang="en">
-    <p>On the concept and methodology of this work: Quantum Sculptures is a computational program inspired by the quantum possibility of a link between distant particles. Here that link is a metaphor for the connection between the viewer and the work, that is, the algorithm that continuously generates unique forms. Depending on the hour and the day someone sees it, there is a different encounter with the work.</p>
-    <p>As a computational work running in real time, it has a set of animated variables moving like sine waves out of phase, with different frequencies, sizes and amplitudes. For one configuration of these variables, which generate the geometry, to repeat, the program would have to run for hundreds or even thousands of years. So each moment of encounter is unique, and each person has a very personal encounter with the work. Hence the concept of quantum sculpture.</p>
-    <p>Technically, the work was first realized in the interactive environment of Blender 3D, with Python and OSC connections. Its most recent version is developed in <a href="https://cables.gl">cables.gl</a>, a visual programming system based on nodes and JavaScript.</p>
-  </div>
-</div>
-
 <h5 lang="pt-BR">
   Obra interativa que explora possibilidades infinitas de interação entre o corpo humano e a matéria escultórica virtual.
   <br>
@@ -51,8 +58,7 @@
   As formas geradas pelo sistema dialogam estética e conceitualmente com a teoria dos campos quânticos, que postula que partículas não ocupam posições fixas, mas emergem como possibilidades moldadas por campos de energia e pela observação. Nesse sentido, a presença do espectador — o simples ato de olhar, mover-se ou interagir — torna-se um fator determinante na configuração do ambiente virtual.
   <br>
   O que se revela não é uma obra estática, mas uma ecologia mutável de som e imagem, profundamente dependente da presença, da proximidade e do gesto. Isso aponta para um interesse maior na dissolução das fronteiras entre observador e sistema, sujeito e objeto, material e imaterial. A instalação opera como um espelho — não da aparência, mas da influência: revelando como ações sutis geram ondas de transformação no espaço virtual e sonoro.
-  Ao referenciar teorias da física e, ao mesmo tempo, ancorar a experiência na interação corporal, a obra busca colapsar a distância entre tecnologia e intuição, ciência e sensorialidade — oferecendo um espaço onde o efêmero se torna tangível e a percepção se transforma em forma.  
-  <br>
+  Ao referenciar teorias da física e, ao mesmo tempo, ancorar a experiência na interação corporal, a obra busca colapsar a distância entre tecnologia e intuição, ciência e sensorialidade — oferecendo um espaço onde o efêmero se torna tangível e a percepção se transforma em forma.
 </h5>
 <h5 lang="en">Interactive work exploring infinite possibilities of interaction between the human body and virtual sculptural matter.
   <br>
@@ -62,8 +68,23 @@
   <br>
   What emerges is not a fixed artwork, but a mutable ecology of sound and image, deeply dependent on presence, proximity, and gesture. This speaks to a broader interest in the dissolution of boundaries between observer and system, subject and object, material and immaterial. The installation operates like a mirror, not of appearance, but of influence: revealing how subtle actions generate waves of transformation in both virtual space and sound.
   By referencing theories from physics while grounding the experience in embodied interaction, the work seeks to collapse the distance between technology and intuition, science and sensoriality—offering a space where the ephemeral becomes tangible, and perception becomes form.
-  <br>
 </h5>
+
+<div class="text-capsule eq-method">
+  <div lang="pt-BR">
+    <h4 class="eq-method-title">Método</h4>
+    <p>Sobre o conceito e a metodologia desta obra: Esculturas Quânticas é uma programação computacional que se inspira na possibilidade quântica de ligação entre partículas distantes. Aqui, essa ligação é a metáfora da conexão entre o espectador e a obra, ou seja, o algoritmo que gera continuamente formas únicas. Dependendo da hora e do dia em que alguém vê a obra, acontece um encontro diferente com ela.</p>
+    <p>Por ser uma obra computacional rodando em tempo real, ela tem uma série de variáveis animadas como ondas senoidais desalinhadas, com frequências, tamanhos e amplitudes diferentes. Para que uma mesma configuração dessas variáveis, que geram a geometria, se repita, seriam necessárias centenas ou até milhares de anos de execução do programa. Por isso cada momento de encontro é único, e cada pessoa tem um encontro muito pessoal com a obra. Daí vem o conceito de escultura quântica.</p>
+    <p>Tecnicamente, a obra foi realizada primeiro no ambiente interativo do Blender 3D, com conexões em Python e OSC. A versão mais recente foi desenvolvida no <a href="https://cables.gl">cables.gl</a>, um sistema de programação visual baseado em nós e JavaScript.</p>
+  </div>
+  <div lang="en">
+    <h4 class="eq-method-title">Method</h4>
+    <p>On the concept and methodology of this work: Quantum Sculptures is a computational program inspired by the quantum possibility of a link between distant particles. Here that link is a metaphor for the connection between the viewer and the work, that is, the algorithm that continuously generates unique forms. Depending on the hour and the day someone sees it, there is a different encounter with the work.</p>
+    <p>As a computational work running in real time, it has a set of animated variables moving like sine waves out of phase, with different frequencies, sizes and amplitudes. For one configuration of these variables, which generate the geometry, to repeat, the program would have to run for hundreds or even thousands of years. So each moment of encounter is unique, and each person has a very personal encounter with the work. Hence the concept of quantum sculpture.</p>
+    <p>Technically, the work was first realized in the interactive environment of Blender 3D, with Python and OSC connections. Its most recent version is developed in <a href="https://cables.gl">cables.gl</a>, a visual programming system based on nodes and JavaScript.</p>
+  </div>
+</div>
+
 <br><br>
 
 
@@ -300,6 +321,7 @@
 
 
 <!-- ///////////////////////////////////////////////////////////////// -->
+<!--
 <div class="row">
   <div class="col-6 col-12-narrower">
     <div class="player">
@@ -323,15 +345,12 @@
   </div>
 </div>
 <br><br>
-<!-- ///////////////////////////////////////////////////////////////// -->
-
-
-<!-- ///////////////////////////////////////////////////////////////// -->
 <br>
 <h3 lang="pt-BR">Coleção Quantum Sculptures no OpenSea</h3>
 <h3 lang="en">Quantum Sculptures collection at OpenSea</h3>
 <a href="https://opensea.io/collection/quantum-sculptures">https://opensea.io/collection/quantum-sculptures  >></a><br>
 <br>
+-->
 <!-- ///////////////////////////////////////////////////////////////// -->
  
 
