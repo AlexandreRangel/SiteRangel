@@ -77,11 +77,8 @@ input, select, textarea {
 	--card-capsule-pad: 16px;
 }
 
-[lang="en"], [lang="pt-BR"] {
-    display: none;
-}
-
-[lang="en"], [lang="pt-BR"] {
+/* Sem JS o português fica visível; o script esconde o idioma inativo. */
+[lang="en"] {
     display: none;
 }
 
@@ -238,7 +235,10 @@ input, select, textarea {
 	}
 
 	body {
-		background: #f5f7fa;
+		background: #0a0a0a;
+		background-image: radial-gradient(1200px 700px at 50% -10%, #1d2126 0%, #0a0a0a 70%);
+		background-attachment: fixed;
+		background-repeat: no-repeat;
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
 		color: #bbb;
@@ -296,7 +296,7 @@ input, select, textarea {
 	}
 
 		a:hover {
-			color: #f35858;
+			color: #7cf2b0;
 			border-bottom-color: rgba(255, 255, 255, 0);
 		}
 
@@ -371,7 +371,7 @@ input, select, textarea {
 
 		header > p {
 			display: block;
-			color: #f35858;
+			color: #7cf2b0;
 			padding: 0.75em 0 1em 0;
 			font-size: 1.5em;
 			line-height: 1.5em;
@@ -2208,7 +2208,7 @@ input, select, textarea {
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			color: #f35858;
+			color: #7cf2b0;
 			border-color: rgba(243, 88, 88, 0.5);
 		}
 
@@ -2459,7 +2459,7 @@ input, select, textarea {
 			}
 
 			.dropotron li.active > a, .dropotron li.active > span {
-				color: #f35858;
+				color: #7cf2b0;
 			}
 
 		.dropotron.level-0 {
@@ -2501,7 +2501,8 @@ input, select, textarea {
 	}
 
 		#hero h1, #hero h2 {
-			color: rgb(54, 54, 54);
+			color: #7cf2b0;
+			text-shadow: 0 1px 2px rgba(0, 0, 0, 0.55), 0 0 14px rgba(0, 0, 0, 0.35);
 			font-size: 3em;
 		}
 
@@ -2648,7 +2649,7 @@ input, select, textarea {
 	}
 	
 	#footer2 a:hover {
-		color: #f35858;
+		color: #7cf2b0;
 	}
 
 	
@@ -3016,6 +3017,23 @@ input, select, textarea {
 
 	@media screen and (max-width: 736px) {
 
+		/* Nuvem de tags em uma linha rolavel, com alvo de toque de 44px */
+
+			.hashtag-menu {
+				white-space: nowrap;
+				overflow-x: auto;
+				-webkit-overflow-scrolling: touch;
+				padding: 0 0.6em 0.5em 0.6em;
+			}
+
+				.hashtag-menu a {
+					display: inline-flex;
+					align-items: center;
+					min-height: 44px;
+					padding: 0 0.35em;
+					margin: 0;
+				}
+
 		/* Basic */
 
 			html, body {
@@ -3160,6 +3178,12 @@ input, select, textarea {
 /* Mobile (Portrait) */
 
 	@media screen and (max-width: 480px) {
+
+		/* O nome na home nao pode ficar menor que o titulo de uma pagina interna */
+
+			#hero header h1, #hero header h2 {
+				font-size: 2em;
+			}
 
 		/* Basic */
 
@@ -3369,7 +3393,7 @@ span.emoji {
 
 #footer2 ul li a:hover,
 #footer2 ul li a:hover .icon::before {
-	color: #f35858;
+	color: #7cf2b0;
 }
 /* Aquamarine titles (#7cf2b0), matching tech.html */
 .feature > .player + p::first-line,
@@ -3378,45 +3402,47 @@ span.emoji {
 #main:not(.tech-page) > h1,
 #main:not(.tech-page) > .text-capsule > h2,
 #main:not(.tech-page) > .text-capsule > h1 { color: #7cf2b0; }
-#main > h2 + i, #main > h2 + h2 + i, #main > h1 + i, #main > h1 + h2 + i,
+#main > h2 + i, #main > h2 + h2 + i, #main > h1 + i, #main > h1 + h2 + i, #main > h1 + i + i,
 #main > .text-capsule > h2 + i, #main > .text-capsule > h2 + h2 + i,
-#main > .text-capsule > h1 + i, #main > .text-capsule > h1 + h2 + i { display: inline-block; border-left: 3px solid #7cf2b0; padding-left: .8em; }
+#main > .text-capsule > h1 + i, #main > .text-capsule > h1 + h2 + i,
+#main > .text-capsule > h1 + i + i { display: inline-block; border-left: 3px solid #7cf2b0; padding-left: .8em; }
 
-/* Aviso de consentimento de analytics (GA4) */
+/* Aviso de consentimento de analytics (GA4) - barra fina no rodape */
 .consent {
 	position: fixed;
-	left: 1rem;
-	right: 1rem;
-	bottom: 1rem;
+	left: 0;
+	right: 0;
+	bottom: 0;
 	z-index: 1000;
-	max-width: 44rem;
-	margin: 0 auto;
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
-	justify-content: space-between;
-	gap: 0.75rem 1.25rem;
-	padding: 1rem 1.15rem;
-	background: rgba(255, 255, 255, 0.97);
-	border: 1px solid #c2c7cc;
-	border-radius: 0.5rem;
-	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+	justify-content: center;
+	gap: 0.5rem 1rem;
+	padding: 0.65rem 1rem;
+	background: rgba(15, 17, 20, 0.97);
+	border-top: 1px solid #2a2a2a;
+	box-shadow: 0 -8px 24px rgba(0, 0, 0, 0.35);
 	text-align: left;
+	color: #ddd;
 }
-.consent .consent-text { margin: 0; color: #222; font-size: 0.95rem; line-height: 1.45; max-width: 28rem; }
+.consent .consent-text { margin: 0; color: #ddd; font-size: 0.9rem; line-height: 1.4; max-width: 44rem; }
 .consent .consent-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; }
-.consent .btn { padding: 0.5rem 1.1rem; font-size: 0.9rem; font-family: inherit; background: none; color: #222; border-color: #6b7280; }
+.consent .btn { padding: 0.45rem 1rem; font-size: 0.85rem; font-family: inherit; background: none; color: #ddd; border-color: #4a5158; }
 .consent .btn:hover,
-.consent .btn:focus { color: #b3261e; border-color: #b3261e; }
-.consent .btn.primary { background: #f35858; border-color: #f35858; color: #141414; }
+.consent .btn:focus { color: #0a0a0a; background: #7cf2b0; border-color: #7cf2b0; }
+.consent .btn.primary { background: #7cf2b0; border-color: #7cf2b0; color: #0a0a0a; }
 .consent .btn.primary:hover,
-.consent .btn.primary:focus { background: #b3261e; border-color: #b3261e; color: #fff; }
-.consent .consent-policy { color: #555; font-size: 0.85rem; text-decoration: underline; }
+.consent .btn.primary:focus { background: #fff; border-color: #fff; color: #0a0a0a; }
+.consent .consent-policy { color: #bbb; font-size: 0.8rem; text-decoration: underline; }
 .consent .consent-policy:hover,
-.consent .consent-policy:focus { color: #b3261e; }
+.consent .consent-policy:focus { color: #7cf2b0; }
 .consent .btn:focus-visible,
-.consent .consent-policy:focus-visible { outline: 2px solid #b3261e; outline-offset: 2px; }
+.consent .consent-policy:focus-visible { outline: 2px solid #7cf2b0; outline-offset: 2px; }
 @media (max-width: 34rem) {
-	.consent { padding: 0.9rem 1rem; }
-	.consent .consent-actions { width: 100%; }
+	.consent { padding: 0.5rem 0.8rem; gap: 0.35rem 0.6rem; }
+	.consent .consent-text { font-size: 0.82rem; line-height: 1.35; }
+	.consent .consent-actions { width: 100%; gap: 0.35rem 0.6rem; }
+	.consent .btn { display: inline-block; width: auto; padding: 0.35rem 0.8rem; font-size: 0.8rem; }
+	.consent .consent-policy { font-size: 0.75rem; }
 }

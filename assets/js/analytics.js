@@ -30,14 +30,14 @@
 
   var TEXT = {
     pt: {
-      message: 'Usamos o Google Analytics para entender como o site \u00e9 usado, sem publicidade. Podemos medir a audi\u00eancia?',
+      message: 'Usamos o Google Analytics para medir audiência, sem publicidade. Podemos medir?',
       accept: 'Aceitar',
       decline: 'Recusar',
       policy: 'Pol\u00edtica de Privacidade',
       label: 'Consentimento para an\u00e1lise de audi\u00eancia'
     },
     en: {
-      message: 'We use Google Analytics to understand how the site is used, with no advertising. May we measure audience?',
+      message: 'We use Google Analytics to measure audience, with no advertising. May we measure?',
       accept: 'Accept',
       decline: 'Decline',
       policy: 'Privacy Policy',
@@ -76,6 +76,19 @@
     document.head.appendChild(s);
   }
 
+  function syncOffset(box) {
+    if (!box || !document.body) {
+      return;
+    }
+    document.body.style.paddingBottom = box.offsetHeight + "px";
+  }
+
+  function clearOffset() {
+    if (document.body) {
+      document.body.style.paddingBottom = "";
+    }
+  }
+
   function showBanner() {
     var t = TEXT[lang];
     var box = document.createElement('div');
@@ -96,14 +109,18 @@
       saveConsent('granted');
       loadTag();
       box.remove();
+      clearOffset();
     });
     box.querySelector('.consent-decline').addEventListener('click', function () {
       saveConsent('denied');
       box.remove();
+      clearOffset();
     });
 
     if (document.body) {
       document.body.appendChild(box);
+      syncOffset(box);
+      window.addEventListener('resize', function () { syncOffset(box); });
     }
   }
 
