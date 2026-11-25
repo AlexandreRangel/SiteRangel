@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /header.html
+Disallow: /footer.html
+
+Sitemap: https://alexandrerangel.art.br/sitemap.xml
