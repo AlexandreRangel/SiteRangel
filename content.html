@@ -34,7 +34,7 @@
     <div id="include-header"></div>
     <div class="wrapper">
       <div class="container" id="main">
-        <h2 id="titulo-tag"></h2>
+        <h1 id="titulo-tag"></h1>
         <section id="cards"></section>
       </div>
     </div>
@@ -70,7 +70,7 @@
     const tag = urlParams.get('tag') ? urlParams.get('tag').toLowerCase() : "";
 
     // Set page title
-    document.querySelector('#titulo-tag').innerHTML = tag;
+    document.querySelector('#titulo-tag').innerHTML = tag || 'Catálogo de obras';
     document.querySelector('#titulo-tag').insertAdjacentHTML('afterend', '<br>');
 
     // Load content when page loads

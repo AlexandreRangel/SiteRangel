@@ -210,7 +210,7 @@ function isMainProse(el) {
     if (el.classList.contains("row") || el.classList.contains("cards") || el.classList.contains("card") || el.classList.contains("player") || el.classList.contains("text-capsule")) return false;
     var tag = el.tagName;
     if (/^(SCRIPT|STYLE|CANVAS|IFRAME|IMG|VIDEO|NAV|FORM|BR|HR)$/.test(tag)) return false;
-    if (/^(H2|H3|H4|H5|H6|P|SPAN|I|EM|BLOCKQUOTE|A|STRONG|B|UL|OL|SMALL)$/.test(tag)) return true;
+    if (/^(H1|H2|H3|H4|H5|H6|P|SPAN|I|EM|BLOCKQUOTE|A|STRONG|B|UL|OL|SMALL)$/.test(tag)) return true;
     if (tag === "DIV" && !el.querySelector(".row, .player, .card, .text-capsule, img, iframe")) return true;
     return false;
 }
