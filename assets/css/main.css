@@ -3405,15 +3405,17 @@ span.emoji {
 }
 .consent .consent-text { margin: 0; color: #222; font-size: 0.95rem; line-height: 1.45; max-width: 28rem; }
 .consent .consent-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; }
-.consent .btn { padding: 0.5rem 1.1rem; font-size: 0.9rem; font-family: inherit; background: none; }
-.consent .btn.primary { background: #f35858; border-color: #f35858; color: #fff; }
+.consent .btn { padding: 0.5rem 1.1rem; font-size: 0.9rem; font-family: inherit; background: none; color: #222; border-color: #6b7280; }
+.consent .btn:hover,
+.consent .btn:focus { color: #b3261e; border-color: #b3261e; }
+.consent .btn.primary { background: #f35858; border-color: #f35858; color: #141414; }
 .consent .btn.primary:hover,
-.consent .btn.primary:focus { background: transparent; color: #f35858; }
+.consent .btn.primary:focus { background: #b3261e; border-color: #b3261e; color: #fff; }
 .consent .consent-policy { color: #555; font-size: 0.85rem; text-decoration: underline; }
 .consent .consent-policy:hover,
-.consent .consent-policy:focus { color: #f35858; }
+.consent .consent-policy:focus { color: #b3261e; }
 .consent .btn:focus-visible,
-.consent .consent-policy:focus-visible { outline: 2px solid #f35858; outline-offset: 2px; }
+.consent .consent-policy:focus-visible { outline: 2px solid #b3261e; outline-offset: 2px; }
 @media (max-width: 34rem) {
 	.consent { padding: 0.9rem 1rem; }
 	.consent .consent-actions { width: 100%; }
