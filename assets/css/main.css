@@ -3378,3 +3378,40 @@ span.emoji {
 #main:not(.tech-page) > .text-capsule > h2 { color: #7cf2b0; }
 #main > h2 + i, #main > h2 + h2 + i,
 #main > .text-capsule > h2 + i, #main > .text-capsule > h2 + h2 + i { display: inline-block; border-left: 3px solid #7cf2b0; padding-left: .8em; }
+
+/* Aviso de consentimento de analytics (GA4) */
+.consent {
+	position: fixed;
+	left: 1rem;
+	right: 1rem;
+	bottom: 1rem;
+	z-index: 1000;
+	max-width: 44rem;
+	margin: 0 auto;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	justify-content: space-between;
+	gap: 0.75rem 1.25rem;
+	padding: 1rem 1.15rem;
+	background: rgba(255, 255, 255, 0.97);
+	border: 1px solid #c2c7cc;
+	border-radius: 0.5rem;
+	box-shadow: 0 12px 40px rgba(0, 0, 0, 0.22);
+	text-align: left;
+}
+.consent .consent-text { margin: 0; color: #222; font-size: 0.95rem; line-height: 1.45; max-width: 28rem; }
+.consent .consent-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem 0.75rem; }
+.consent .btn { padding: 0.5rem 1.1rem; font-size: 0.9rem; font-family: inherit; background: none; }
+.consent .btn.primary { background: #f35858; border-color: #f35858; color: #fff; }
+.consent .btn.primary:hover,
+.consent .btn.primary:focus { background: transparent; color: #f35858; }
+.consent .consent-policy { color: #555; font-size: 0.85rem; text-decoration: underline; }
+.consent .consent-policy:hover,
+.consent .consent-policy:focus { color: #f35858; }
+.consent .btn:focus-visible,
+.consent .consent-policy:focus-visible { outline: 2px solid #f35858; outline-offset: 2px; }
+@media (max-width: 34rem) {
+	.consent { padding: 0.9rem 1rem; }
+	.consent .consent-actions { width: 100%; }
+}
