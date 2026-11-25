@@ -275,7 +275,7 @@ input, select, textarea {
 		text-decoration: none;
 	}
 
-	h2 {
+	h2, h1 {
 		font-size: 2em;
 		line-height: 1.25em;
 	}
@@ -2500,7 +2500,7 @@ input, select, textarea {
 		z-index: 1;
 	}
 
-		#hero h2 {
+		#hero h1, #hero h2 {
 			color: rgb(54, 54, 54);
 			font-size: 3em;
 		}
@@ -2758,7 +2758,7 @@ input, select, textarea {
 				font-size: 14pt;
 			}
 
-            h2 {
+            h2, h1 {
                 font-size: 1.8em;
             }
 
@@ -2861,7 +2861,7 @@ input, select, textarea {
 				padding: 3.5em 4em 0 4em;
 			}
 
-				#hero h2 {
+				#hero h1, #hero h2 {
 					font-size: 2.75em;
 				}
 
@@ -2972,7 +2972,7 @@ input, select, textarea {
 
 		/* Hero */
 
-			#hero h2 {
+			#hero h1, #hero h2 {
 				font-size: 2.5em;
 			}
 
@@ -3027,7 +3027,7 @@ input, select, textarea {
 				letter-spacing: 0;
 			}
 
-			h2 {
+			h2, h1 {
 				font-size: 1.5em;
 				line-height: 1.25em;
 			}
@@ -3132,7 +3132,7 @@ input, select, textarea {
 					margin: 0 0 1.25em 0;
 				}
 
-					#hero header h2 {
+					#hero header h1, #hero header h2 {
 						font-size: 1.5em;
 					}
 
@@ -3375,9 +3375,12 @@ span.emoji {
 .feature > .player + p::first-line,
 .feature > .player + .text-capsule > p::first-line { color: #7cf2b0; font-size: 1.2em; font-weight: 600; }
 #main:not(.tech-page) > h2,
-#main:not(.tech-page) > .text-capsule > h2 { color: #7cf2b0; }
-#main > h2 + i, #main > h2 + h2 + i,
-#main > .text-capsule > h2 + i, #main > .text-capsule > h2 + h2 + i { display: inline-block; border-left: 3px solid #7cf2b0; padding-left: .8em; }
+#main:not(.tech-page) > h1,
+#main:not(.tech-page) > .text-capsule > h2,
+#main:not(.tech-page) > .text-capsule > h1 { color: #7cf2b0; }
+#main > h2 + i, #main > h2 + h2 + i, #main > h1 + i, #main > h1 + h2 + i,
+#main > .text-capsule > h2 + i, #main > .text-capsule > h2 + h2 + i,
+#main > .text-capsule > h1 + i, #main > .text-capsule > h1 + h2 + i { display: inline-block; border-left: 3px solid #7cf2b0; padding-left: .8em; }
 
 /* Aviso de consentimento de analytics (GA4) */
 .consent {
