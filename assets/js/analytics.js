@@ -1,32 +1,118 @@
-/**
- * Google Analytics 4 (gtag) for alexandrerangel.art.br
- *
- * GA4 property: AlexandreRangel.art.br - GA4 (property ID 371310706)
- * Set GA_MEASUREMENT_ID to the web stream Measurement ID (Admin → Data streams → Web → Measurement ID).
- */
+/* alexandrerangel.art.br - analytics.js
+   GA4 (gtag) com Google Consent Mode v2.
+   Nenhuma requisicao ao Google e feita antes do consentimento (nem cookie algum).
+   Enquanto GA4_ID estiver vazio, nada e carregado e o aviso nao aparece. */
 (function () {
-    if (window.__siteGaInitialized) {
-        return;
+  'use strict';
+
+  if (window.__siteGaInitialized) {
+    return;
+  }
+  window.__siteGaInitialized = true;
+
+  var GA4_ID = 'G-W48Q28Q9BE'; // fluxo "AlexandreRangel.art.br - GA4"
+  var CONSENT_KEY = 'ar-ana...sent';
+  var root = document.documentElement;
+
+  function detectLang() {
+    try {
+      if (/[?&]lang=en(&|$)/.test(window.location.search)) {
+        return 'en';
+      }
+      if (localStorage.getItem('currentLanguage') === 'en') {
+        return 'en';
+      }
+    } catch (e) { /* modo privado */ }
+    return root.lang === 'en' ? 'en' : 'pt';
+  }
+
+  var lang = detectLang();
+
+  var TEXT = {
+    pt: {
+      message: 'Usamos o Google Analytics para entender como o site \u00e9 usado, sem publicidade. Podemos medir a audi\u00eancia?',
+      accept: 'Aceitar',
+      decline: 'Recusar',
+      policy: 'Pol\u00edtica de Privacidade',
+      label: 'Consentimento para an\u00e1lise de audi\u00eancia'
+    },
+    en: {
+      message: 'We use Google Analytics to understand how the site is used, with no advertising. May we measure audience?',
+      accept: 'Accept',
+      decline: 'Decline',
+      policy: 'Privacy Policy',
+      label: 'Analytics consent'
     }
+  };
 
-    var GA_MEASUREMENT_ID = "G-W48Q28Q9BE";
+  function readConsent() {
+    try { return localStorage.getItem(CONSENT_KEY); } catch (e) { return null; }
+  }
 
-    window.__siteGaInitialized = true;
+  function saveConsent(value) {
+    try { localStorage.setItem(CONSENT_KEY, value); } catch (e) { /* modo privado */ }
+  }
+
+  function loadTag() {
+    if (window.__siteGaLoaded) {
+      return;
+    }
+    window.__siteGaLoaded = true;
 
     window.dataLayer = window.dataLayer || [];
-    function gtag() {
-        window.dataLayer.push(arguments);
-    }
-    window.gtag = window.gtag || gtag;
+    window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
+    window.gtag('js', new Date());
+    window.gtag('consent', 'default', {
+      ad_storage: 'denied',
+      ad_user_data: 'denied',
+      ad_personalization: 'denied',
+      analytics_storage: 'granted'
+    });
+    window.gtag('config', GA4_ID, { page_language: lang });
 
-    var loader = document.createElement("script");
-    loader.async = true;
-    loader.src =
-        "https://www.googletagmanager.com/gtag/js?id=" +
-        encodeURIComponent(GA_MEASUREMENT_ID);
-    loader.onload = function () {
-        gtag("js", new Date());
-        gtag("config", GA_MEASUREMENT_ID);
-    };
-    (document.head || document.documentElement).appendChild(loader);
+    var s = document.createElement('script');
+    s.async = true;
+    s.src = 'https://www.googletagmanager.com/gtag/js?id=' + encodeURIComponent(GA4_ID);
+    document.head.appendChild(s);
+  }
+
+  function showBanner() {
+    var t = TEXT[lang];
+    var box = document.createElement('div');
+    box.className = 'consent';
+    box.setAttribute('role', 'region');
+    box.setAttribute('aria-label', t.label);
+    box.innerHTML =
+      '<p class="consent-text">' + t.message + '</p>' +
+      '<div class="consent-actions">' +
+      '<button type="button" class="btn primary consent-accept">' + t.accept + '</button>' +
+      '<button type="button" class="btn consent-decline">' + t.decline + '</button>' +
+      '<a class="consent-policy" href="' +
+      (lang === 'en' ? 'privacidade.html?lang=en' : 'privacidade.html') +
+      '">' + t.policy + '</a>' +
+      '</div>';
+
+    box.querySelector('.consent-accept').addEventListener('click', function () {
+      saveConsent('granted');
+      loadTag();
+      box.remove();
+    });
+    box.querySelector('.consent-decline').addEventListener('click', function () {
+      saveConsent('denied');
+      box.remove();
+    });
+
+    if (document.body) {
+      document.body.appendChild(box);
+    }
+  }
+
+  if (!GA4_ID) {
+    return;
+  }
+  if (readConsent() === 'granted') {
+    loadTag();
+  } else if (readConsent() === null) {
+    showBanner();
+  }
 })();
