@@ -151,31 +151,37 @@
       </ul>
       <p>Esses dados <strong>não são enviados para servidores da Quase-Cinema Lab</strong>. Apagar o aplicativo ou limpar o armazenamento do app remove esses dados locais. Por isso <strong>não oferecemos um processo de exclusão em servidor</strong>: não há cópia nossa para apagar.</p>
       <p>No Windows, esses dados ficam na pasta do usuário no próprio computador (por exemplo em <code>Documentos\Tecno Tarot</code>) e no armazenamento local do app. Desinstalar o app ou apagar essa pasta remove os dados locais.</p>
-      <p>Backups do sistema (iCloud, Google Backup, OneDrive etc.), quando ativos nas configurações do aparelho, ficam sob controle da Apple, do Google, da Microsoft e do usuário.</p>
+      <p>Backups do sistema (iCloud, Google Backup, OneDrive etc.), quando ativos nas configurações do aparelho, ficam sob controle da Apple, do Google, da Microsoft e do usuário. No Android, o diário, o perfil e as preferências podem fazer parte desse backup e da transferência de aparelho para aparelho; os baralhos e os caches não entram.</p>
 
       <h3>Compras no aplicativo</h3>
       <p>Compras de baralhos e apoios (compras únicas) são processadas pelas lojas:</p>
       <ul>
         <li><strong>Google Play Billing</strong> no Android;</li>
-        <li><strong>Apple App Store / StoreKit</strong> no iOS;</li>
+        <li><strong>Apple App Store / StoreKit</strong> no iOS e no iPadOS;</li>
         <li><strong>Apple App Store / StoreKit</strong> também no Mac;</li>
         <li><strong>Microsoft Store</strong> no Windows (APIs de compra da Microsoft Store).</li>
       </ul>
-      <p>A Quase-Cinema Lab não recebe nem armazena o número do seu cartão. A loja pode tratar dados de compra conforme a política de privacidade da Google, da Apple ou da Microsoft. O app usa o SDK de faturamento da loja (e serviços associados do Play / Apple) para validar e restaurar compras.</p>
+      <p>A Quase-Cinema Lab não recebe nem armazena dados do seu cartão. A loja pode tratar dados de compra conforme a política de privacidade da Google, da Apple ou da Microsoft. O app usa o SDK de faturamento da loja (e serviços associados do Play / Apple) para validar e restaurar compras.</p>
 
-      <h3>Entrega de conteúdo pelo Google Play (Android)</h3>
-      <p>Em algumas builds Android, pacotes de baralho podem ser baixados sob demanda pelo <strong>Play Asset Delivery</strong> (infraestrutura da Google Play), não por um servidor nosso. Isso serve só para entregar arquivos do app (arte e dados do baralho). Não enviamos suas leituras nem seu perfil nesse processo.</p>
+      <h3>Entrega de baralhos</h3>
+      <p>Os baralhos pagos são entregues pela loja da sua plataforma, não por um servidor nosso. Isso serve só para entregar arquivos do app (arte, música e dados do baralho). Não enviamos suas leituras nem seu perfil nesse processo:</p>
+      <ul>
+        <li>no <strong>iOS</strong> e no <strong>iPadOS</strong>, pelos <strong>pacotes de recursos hospedados pela Apple</strong> (Apple-hosted asset packs);</li>
+        <li>no <strong>Mac</strong>, os baralhos vêm embutidos no próprio aplicativo distribuído pela App Store;</li>
+        <li>no <strong>Android</strong>, pelo <strong>Play Asset Delivery</strong> (infraestrutura da Google Play);</li>
+        <li>no <strong>Windows</strong>, como pacotes opcionais instalados pela <strong>Microsoft Store</strong>.</li>
+      </ul>
 
-      <h3>Entrega de conteúdo pela Microsoft Store (Windows)</h3>
-      <p>No Windows, os baralhos comprados são instalados como pacotes opcionais do app pela <strong>Microsoft Store</strong> (infraestrutura da Microsoft), não por um servidor nosso. Isso serve só para entregar arquivos do app (arte, música e dados do baralho). Não enviamos suas leituras nem seu perfil nesse processo.</p>
+      <h3>Localização</h3>
+      <p>No <strong>iOS</strong> e no <strong>iPadOS</strong>, o app pode pedir a permissão de localização <strong>durante o uso</strong> apenas para ler a <strong>direção da bússola</strong>, usada no modo Sacudir e no movimento das cartas. O app não pede, não registra e não envia a sua posição: não usamos GPS para rastrear você, e não pedimos local de nascimento. Se você negar a permissão, o app continua funcionando, só sem a bússola. No Mac, no Android e no Windows o app não pede localização.</p>
 
       <h3>Sensores do aparelho</h3>
       <p>O app pode usar sensores <strong>somente no dispositivo</strong>, para efeitos e para o sorteio. Nada disso é armazenado em servidores nossos nem enviado a nós:</p>
       <ul>
         <li><strong>Giroscópio</strong>, vetor de rotação e/ou acelerômetro: paralaxe 3D das cartas e modo Sacudir;</li>
-        <li>no iOS, a <strong>bússola (direção)</strong> pode entrar no sorteio do modo Sacudir. Não usamos GPS para rastrear ou compartilhar sua localização. O app não compartilha localização.</li>
+        <li>no iOS e no iPadOS, a <strong>bússola (direção)</strong> pode entrar no sorteio do modo Sacudir, quando a permissão de localização é concedida (veja acima).</li>
       </ul>
-      <p>As amostras de movimento são processadas na hora e descartadas para o efeito ou o sorteio.</p>
+      <p>As amostras de movimento e de direção são processadas na hora e descartadas para o efeito ou o sorteio.</p>
 
       <h3>O que não fazemos</h3>
       <ul>
@@ -185,13 +191,13 @@
         <li>Não há conta, login, chat nem conteúdo gerado por usuários enviado a nós.</li>
         <li>Não vendemos dados pessoais.</li>
       </ul>
-      <p>Os únicos SDKs de plataforma relacionados a rede/loja que o app usa, no estado atual do código, são os da <strong>Google Play</strong> (Billing, Asset Delivery / Play Services conforme a build) e, no iOS, os da <strong>Apple</strong> para compras e, no Windows, as APIs da <strong>Microsoft Store</strong> para compras e pacotes opcionais. Comunicação com a loja, quando ocorre, usa canais da plataforma; o tráfego relevante é protegido conforme as práticas da Google, da Apple e da Microsoft (incluindo criptografia em trânsito nos serviços delas).</p>
+      <p>Para compras e para a entrega de baralhos, o app usa apenas os serviços da própria loja: na Apple, o StoreKit e, no iOS e no iPadOS, os pacotes hospedados pela Apple; no Android, o Google Play Billing e o Play Asset Delivery; no Windows, as APIs da Microsoft Store para compras e pacotes opcionais. Comunicação com a loja, quando ocorre, usa canais da plataforma; o tráfego relevante é protegido conforme as práticas da Google, da Apple e da Microsoft (incluindo criptografia em trânsito nos serviços delas).</p>
 
       <h3>Crianças e adolescentes</h3>
       <p>O Tecno Tarot é destinado a pessoas com <strong>13 anos ou mais</strong>. <strong>Não é direcionado a crianças menores de 13 anos.</strong> Como não coletamos dados pessoais em nossos servidores, também não coletamos dados de crianças em servidores nossos.</p>
 
       <h3>Segurança</h3>
-      <p>Como não mantemos um banco de dados nosso de usuários, o risco principal de privacidade está no aparelho e nas lojas. Recomendamos manter o sistema e o app atualizados e proteger o aparelho com bloqueio de tela. Dados locais sensíveis do perfil e do diário são excluídos das regras de backup automático do app no Android, quando aplicável.</p>
+      <p>Como não mantemos um banco de dados nosso de usuários, o risco principal de privacidade está no aparelho e nas lojas. Recomendamos manter o sistema e o app atualizados e proteger o aparelho com bloqueio de tela.</p>
 
       <h3>Alterações nesta política</h3>
       <p>Podemos atualizar esta política. A data no topo indica a versão vigente. Alterações relevantes serão publicadas nesta página (URL pública HTTPS usada nas fichas da Play Store, da App Store e da Microsoft Store).</p>
@@ -226,31 +232,37 @@
       </ul>
       <p>This data is <strong>not sent to Quase-Cinema Lab servers</strong>. Uninstalling the app or clearing app storage removes this local data. That is why <strong>we do not offer a server-side deletion process</strong>: we have no copy of yours to delete.</p>
       <p>On Windows, this data stays in your user folder on the computer itself (for example in <code>Documents\Tecno Tarot</code>) and in the app's local storage. Uninstalling the app or deleting that folder removes the local data.</p>
-      <p>System backups (iCloud, Google Backup, OneDrive, and similar), when enabled in your device settings, remain under the control of Apple, Google, Microsoft, and you.</p>
+      <p>System backups (iCloud, Google Backup, OneDrive, and similar), when enabled in your device settings, remain under the control of Apple, Google, Microsoft, and you. On Android, the journal, profile, and preferences may be included in that backup and in device-to-device transfer; decks and caches are not.</p>
 
       <h3>In-app purchases</h3>
       <p>Deck and tip purchases (one-time) are processed by the stores:</p>
       <ul>
         <li><strong>Google Play Billing</strong> on Android;</li>
-        <li><strong>Apple App Store / StoreKit</strong> on iOS;</li>
+        <li><strong>Apple App Store / StoreKit</strong> on iOS and iPadOS;</li>
         <li><strong>Apple App Store / StoreKit</strong> on Mac as well;</li>
         <li><strong>Microsoft Store</strong> on Windows (Microsoft Store purchase APIs).</li>
       </ul>
-      <p>Quase-Cinema Lab does not receive or store your card number. The store may process purchase data under Google's, Apple's, or Microsoft's own privacy policy. The app uses the store billing SDK (and related Play / Apple services) to validate and restore purchases.</p>
+      <p>Quase-Cinema Lab does not receive or store your card data. The store may process purchase data under Google's, Apple's, or Microsoft's own privacy policy. The app uses the store billing SDK (and related Play / Apple services) to validate and restore purchases.</p>
 
-      <h3>Content delivery via Google Play (Android)</h3>
-      <p>In some Android builds, deck packs may be downloaded on demand through <strong>Play Asset Delivery</strong> (Google Play infrastructure), not through a server we operate. This only delivers app files (deck art and data). We do not send your readings or profile in that process.</p>
+      <h3>Deck delivery</h3>
+      <p>Paid decks are delivered by your platform's store, not by a server we operate. This only delivers app files (deck art, music and data). We do not send your readings or profile in that process:</p>
+      <ul>
+        <li>on <strong>iOS</strong> and <strong>iPadOS</strong>, through <strong>Apple-hosted asset packs</strong>;</li>
+        <li>on <strong>Mac</strong>, the decks are embedded in the app distributed by the App Store;</li>
+        <li>on <strong>Android</strong>, through <strong>Play Asset Delivery</strong> (Google Play infrastructure);</li>
+        <li>on <strong>Windows</strong>, as optional packages installed by the <strong>Microsoft Store</strong>.</li>
+      </ul>
 
-      <h3>Content delivery via Microsoft Store (Windows)</h3>
-      <p>On Windows, purchased decks are installed as optional app packages through the <strong>Microsoft Store</strong> (Microsoft infrastructure), not through a server we operate. This only delivers app files (deck art, music and data). We do not send your readings or profile in that process.</p>
+      <h3>Location</h3>
+      <p>On <strong>iOS</strong> and <strong>iPadOS</strong>, the app may ask for <strong>While Using</strong> location permission only to read the <strong>compass heading</strong>, used by Shake mode and card motion. The app does not request, record, or send your position: we do not use GPS to track you, and we do not ask for a place of birth. If you deny the permission, the app keeps working, just without the compass. On Mac, Android, and Windows the app does not request location.</p>
 
       <h3>Device sensors</h3>
       <p>The app may use sensors <strong>on the device only</strong>, for visual effects and for the draw. None of this is stored on our servers or sent to us:</p>
       <ul>
         <li><strong>Gyroscope</strong>, rotation vector and/or accelerometer: 3D card parallax and Shake mode;</li>
-        <li>on iOS, <strong>compass heading</strong> may be included in the Shake-mode draw. We do not use GPS to track or share your location. The app does not share location.</li>
+        <li>on iOS and iPadOS, <strong>compass heading</strong> may be included in the Shake-mode draw when location permission is granted (see above).</li>
       </ul>
-      <p>Motion samples are processed in the moment and discarded for the effect or the draw.</p>
+      <p>Motion and heading samples are processed in the moment and discarded for the effect or the draw.</p>
 
       <h3>What we do not do</h3>
       <ul>
@@ -260,13 +272,13 @@
         <li>There is no account, login, chat, or user-generated content sent to us.</li>
         <li>We do not sell personal data.</li>
       </ul>
-      <p>The only platform store / network-related SDKs the app uses in the current codebase are <strong>Google Play</strong> libraries (Billing, Asset Delivery / Play Services depending on the build) and, on iOS, <strong>Apple</strong> purchase APIs, and, on Windows, <strong>Microsoft Store</strong> APIs for purchases and optional packages. When the app talks to the store, it uses platform channels; relevant traffic is protected according to Google's, Apple's, and Microsoft's practices (including encryption in transit on their services).</p>
+      <p>For purchases and deck delivery, the app uses only the platform store's own services: on Apple, StoreKit and, on iOS and iPadOS, Apple-hosted asset packs; on Android, Google Play Billing and Play Asset Delivery; on Windows, Microsoft Store APIs for purchases and optional packages. When the app talks to the store, it uses platform channels; relevant traffic is protected according to Google's, Apple's, and Microsoft's practices (including encryption in transit on their services).</p>
 
       <h3>Children and teens</h3>
       <p>Tecno Tarot is intended for people <strong>13 years of age and older</strong>. <strong>It is not directed at children under 13.</strong> Because we do not collect personal data on our servers, we also do not collect children's data on our servers.</p>
 
       <h3>Security</h3>
-      <p>Because we do not keep our own user database, the main privacy surface is your device and the stores. Keep the OS and the app updated and protect the device with a screen lock. Where applicable on Android, sensitive local profile and journal files are excluded from the app's automatic backup rules.</p>
+      <p>Because we do not keep our own user database, the main privacy surface is your device and the stores. Keep the OS and the app updated and protect the device with a screen lock.</p>
 
       <h3>Changes to this policy</h3>
       <p>We may update this policy. The date at the top shows the current version. Material changes will be posted on this page (the public HTTPS URL used in the Play Store, App Store, and Microsoft Store listings).</p>
